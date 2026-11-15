@@ -1,0 +1,222 @@
+[
+  {
+    "id": "M01",
+    "titulo": "Retoma después de meses, medidas y envío",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Chevrolet prismas 2017", "Envió", "Tenes fotos", "¿Tienen las medidas exactas para mi modelo de vehículo?", "Chevrolet prisma 2017", "Envío a Neuquen"],
+    "contexto_observado": "El hilo incluye una primera consulta y una retoma meses después. El cliente aporta modelo y año, elige envío y pide fotos. En la retoma vuelve a consultar por medidas y precisa el destino. La respuesta histórica del negocio sobre compatibilidad no se toma como disponibilidad vigente.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "mixta",
+    "criterios_propuestos": ["Distinguir la consulta histórica de la retoma y conservar los datos explícitos que sigan siendo pertinentes.", "Reconocer la variación de escritura de Prisma sin cambiar el vehículo por suposición.", "Consultar la fuente vigente para confirmar medidas y atender el pedido de fotos según el guion aprobado."],
+    "limites": "La pregunta sobre medidas parece una opción prearmada del anuncio. Los mensajes corresponden a momentos distintos; no deben reproducirse como un único lote del buffer. Los criterios son propuestas de prueba, no modificaciones del guion."
+  },
+  {
+    "id": "M02",
+    "titulo": "Modelo, destino, color y presupuesto en pocos mensajes",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["hola, de donde son, para la fiat strada freedon que precio está?", "Hola. Soy de chaco, con envío, en cuero negro nomás debe ser, para la fiat strada freedon. Si me puede hacer un presupuesto"],
+    "contexto_observado": "El cliente pregunta ubicación y precio. Luego aporta provincia, modalidad de envío y preferencia de color negro, además del vehículo. No aparece un año explícito en estos mensajes.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Extraer y conservar las distintas preguntas y datos del mismo mensaje.", "No volver a preguntar modalidad o color como si no hubieran sido informados.", "Identificar los datos faltantes realmente necesarios para la cotización, conforme al guion y las herramientas aprobadas."],
+    "limites": "La escritura del modelo se conserva literal. No se infiere año, cantidad de asientos ni una variante comercial de funda a partir de la palabra cuero. Los criterios no establecen una respuesta comercial nueva."
+  },
+  {
+    "id": "M03",
+    "titulo": "Insistencia por el precio antes de elegir modalidad",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola cuánto sale?", "Una Duster", "Cuánto salen?", "Me decís el precio?"],
+    "contexto_observado": "Después de informar el modelo, el cliente vuelve a pedir el precio mientras el negocio intenta definir CABA o envío. La secuencia no contiene una respuesta explícita sobre modalidad ni año.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Detectar que el precio sigue siendo una pregunta pendiente y que el cliente está insistiendo.", "Si falta un dato obligatorio, identificarlo y tratarlo según el guion aprobado sin inventar un importe.", "Evitar volver al saludo o perder el modelo ya informado."],
+    "limites": "La insistencia no permite inferir enojo, abandono ni presupuesto máximo. Este caso no autoriza a cambiar el orden contractual de preguntas."
+  },
+  {
+    "id": "M04",
+    "titulo": "Modalidad condicional, material, configuración y visita",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Si es muy difícil....lo llevaría a colocar", "Pero si es fácil, no tendría inconveniente en recibirlo y hacerlo yo", "Necesito ver modelos, colores y precio", "Cuando decís Cuero Automotor... es Ecocuer o cuerina?", "2017 Chevrolet Prisma joy 1.4", "Me gustaría visitarlos en el punto de venta"],
+    "contexto_observado": "La consulta comienza por fundas para un Chevrolet Prisma Joy. El cliente condiciona la modalidad a la dificultad de instalación y pide modelos, colores, precio y precisión sobre el material. En el hilo también especifica dos butacas delanteras y un asiento trasero de tres plazas; esa parte se conserva como resumen, no como cita literal. Finalmente expresa interés en visitar el punto de venta.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["No convertir una preferencia condicional en una elección definitiva de envío o colocación.", "Atender las dudas sobre material e instalación con información aprobada y conservar la configuración explicitada.", "Distinguir una visita al local de una reserva o compra confirmada."],
+    "limites": "Los fragmentos citados son una selección, no la transcripción completa. La descripción histórica del material dada por la empleada no se adopta como fuente de verdad. No se incluyen precios históricos."
+  },
+  {
+    "id": "M05",
+    "titulo": "Partner Van de tres asientos con envío",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola me pasas precio para la nueva partner van", "Fundas para los 3 asientos", "La de envío cuánto salen"],
+    "contexto_observado": "El cliente informa el vehículo y la cantidad de asientos en mensajes separados. Luego vincula su pedido de precio a la modalidad de envío.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Combinar los datos aportados en turnos sucesivos sin perder los tres asientos.", "No usar una cotización de juego estándar sin verificar la configuración aplicable.", "Reconocer la modalidad de envío sin deducir un destino no informado."],
+    "limites": "La palabra nueva no determina por sí sola un año. No se conoce la distribución de esos tres asientos a partir de las citas seleccionadas."
+  },
+  {
+    "id": "M06",
+    "titulo": "Pregunta prearmada repetida y múltiples automatismos",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["¿Dónde puedo visitarlos?", "¿Dónde puedo visitarlos?", "¿Dónde puedo visitarlos?", "¿Dónde puedo visitarlos?"],
+    "contexto_observado": "La pregunta aparece cuatro veces y tiene formato de opción prearmada. Más adelante aparece otra entrada prearmada solicitando conversar. En el hilo se observan múltiples respuestas automáticas del negocio. No se atribuye su causa a un componente específico.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "prearmada_probable",
+    "criterios_propuestos": ["Reconocer la consulta de ubicación y responder con los datos vigentes autorizados.", "Evaluar por separado la repetición real de entradas y la duplicación de eventos de transporte, sin confundirlas.", "No contar cada botón repetido como una intención comercial distinta ni como evidencia de alta intención de compra."],
+    "limites": "No se conservaron identificadores de eventos ni tiempos suficientes para diagnosticar duplicación técnica. La causa de los automatismos múltiples no está verificada. El texto del último botón se resume para no inventar una cita."
+  },
+  {
+    "id": "M07",
+    "titulo": "Retoma de Duster al interior e insistencia por precio",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["El precio"],
+    "contexto_observado": "El historial incluye consultas de junio y una retoma a fines de octubre. El cliente pide fundas para una Renault Duster 2.0, consulta por envío a Río Gallegos y vuelve a insistir por el precio. Más adelante informa el año 2017. Se conserva como cita la insistencia exacta; los otros datos de esta ficha están resumidos.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Reconocer una retoma y conservar vehículo y destino sin tratar todo el historial como una ráfaga nueva.", "Interpretar El precio como continuación de la solicitud de cotización, no como una consulta aislada sin contexto.", "Consultar precios y compatibilidad vigentes en lugar de reutilizar afirmaciones comerciales antiguas."],
+    "limites": "La lista de mensajes literales es parcial y necesita el contexto de esta ficha para una recreación. Las respuestas históricas del negocio no establecen compatibilidad ni condiciones actuales."
+  },
+  {
+    "id": "M08",
+    "titulo": "Precio primero y posterior pedido de dirección",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Quisiera saver el precio primero gracias", "Pasame dirección Gracias"],
+    "contexto_observado": "El cliente había pedido precio para un Ford Fiesta 2005 cola corta. Frente a la pregunta por CABA o envío, insiste en conocer primero el precio. Después solicita la dirección.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar la solicitud de precio como pendiente y reconocer el posterior pedido de ubicación.", "No inferir que pedir la dirección confirma una reserva o una modalidad definitiva.", "Usar datos de ubicación vigentes y respetar el guion aprobado para los requisitos de cotización."],
+    "limites": "No se infiere abandono, enojo ni cierre. La escritura saver se conserva literal. No se afirma que el precio haya quedado resuelto."
+  },
+  {
+    "id": "M09",
+    "titulo": "Fotos pendientes después de consultar por envío",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Luego te envío"],
+    "contexto_observado": "El cliente consultó por precio para un Toyota Corolla 2016 y eligió envío. El negocio pidió fotos de las butacas. Tras un seguimiento, el cliente indicó que las enviaría después.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "mixta",
+    "criterios_propuestos": ["Interpretar la frase en relación con las fotos solicitadas, no como un nuevo pedido de transporte.", "Mantener el estado de información pendiente sin marcar las fotos como recibidas.", "No convertir esta práctica histórica de pedir fotos en una regla automática del agente si no está prevista en el guion aprobado."],
+    "limites": "La entrada original sobre medidas tenía apariencia prearmada. El fragmento seleccionado no confirma recepción ni revisión posterior de fotos. El límite entre agente y Candela debe seguir la definición aprobada."
+  },
+  {
+    "id": "M10",
+    "titulo": "Consulta básica de Suran y envío",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Con envío"],
+    "contexto_observado": "El cliente había consultado precio para una Suran modelo 2007. Ante la pregunta del negocio por modalidad, responde Con envío. Luego el negocio envía un video y pregunta por opciones; no se observa una elección posterior en el tramo leído.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Interpretar la respuesta breve como selección de modalidad y mantener modelo y año.", "No completar destino, diseño ni variante de funda por suposición.", "Usar este recorrido sencillo como control frente a los casos con ambigüedad o varias preguntas."],
+    "limites": "La cita es parcial y depende del contexto resumido. La falta de respuesta posterior visible no demuestra abandono. El video no fue analizado."
+  },
+  {
+    "id": "M11",
+    "titulo": "Spin con cantidad de asientos sin aclaración textual",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola nesito para chevrolet spin activ año 2018", "Colocar y soy de flores CABA", "Los precios como son?", "Nesito para chevrolet spin activ año 2018"],
+    "contexto_observado": "El cliente informa vehículo y año, solicita colocación en CABA y pregunta por precios. Cuando el negocio consulta cuántas butacas tiene el vehículo, la respuesta textual visible vuelve a mencionar el modelo. No hay una cantidad numérica explícita en los mensajes citados.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["No tratar la repetición del modelo como respuesta confirmada sobre cantidad de asientos.", "Conservar la elección de colocación y los datos ya explícitos del vehículo.", "Resolver los datos necesarios para cotizar mediante las fuentes y el recorrido aprobados, sin deducir la configuración solo por el nombre Spin."],
+    "limites": "No se afirma una configuración de cinco o siete plazas. Los importes enviados por el negocio no se incorporan como resultados esperados."
+  },
+  {
+    "id": "M12",
+    "titulo": "Elección referencial y color en mensajes separados",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["La segunda", "Pero toda negra"],
+    "contexto_observado": "El cliente consultó por fundas para un Fiat Cronos y envío a Tandil. Después de recibir un video con opciones y una pregunta sobre cuál se adapta a lo que busca, responde La segunda y agrega Pero toda negra.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Resolver la referencia únicamente contra las opciones efectivamente presentadas.", "Incorporar el color negro a la misma elección y conservar la modalidad de envío.", "Distinguir elección de variante y color de una reserva o pago confirmado."],
+    "limites": "El video no fue analizado: esta ficha no determina qué producto era la segunda opción. Para una prueba determinista se debe aportar el contenido y orden verificados de las opciones."
+  },
+  {
+    "id": "M13",
+    "titulo": "Master 3 y cantidad ambigua",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola precio para una Master 3 camioneta precio por una de cuero"],
+    "contexto_observado": "Consulta breve que combina el nombre del vehículo, el número 3 y la expresión una de cuero. El fragmento no aclara año, cantidad de asientos, modalidad ni si pide una funda individual o un juego.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["No interpretar automáticamente Master 3 como tres asientos.", "No convertir una de cuero en una cantidad o variante comercial confirmada sin contexto suficiente.", "Solicitar las precisiones necesarias conforme al guion aprobado antes de elegir una cotización aplicable."],
+    "limites": "El hilo leído solo aporta esta consulta. Las interpretaciones posibles se señalan como ambigüedades, no como intenciones verificadas."
+  },
+  {
+    "id": "M14",
+    "titulo": "Presupuesto orientativo para Amarok cabina simple",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Me pasas precio promedio para pick up amarok (cabina simple)", "Opcion envio", "El precio"],
+    "contexto_observado": "El cliente pide un precio promedio, especifica cabina simple y elige envío. Después de recibir un video y una pregunta por diseño o valor, vuelve a pedir el precio.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar cabina simple como un dato relevante y no cotizar por defecto una cabina doble.", "Reconocer que el cliente sigue pidiendo información de precio y no ha confirmado diseño ni reserva.", "No inventar un promedio comercial cuando la fuente aprobada requiera una configuración o datos específicos."],
+    "limites": "Cabina simple no confirma por sí sola la distribución de asientos. No se conserva el importe histórico como referencia vigente."
+  },
+  {
+    "id": "M15",
+    "titulo": "Cronos 2026, retoma y pregunta sobre cómo se determina el precio",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola burnas tardes quisiera saber de fundas para Fiat Cronos modelo 2026", "Hola buenos días quisiera colocarlo en CABA", "Gracias por la explicación y que precio están dependen del modelo de auto ?", "Donde queda el punto de venta"],
+    "contexto_observado": "El hilo incluye una consulta de septiembre y una retoma en noviembre. El cliente informa modelo y año, expresa preferencia por colocación en CABA, pregunta si el precio depende del modelo y solicita ubicación.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Mantener vehículo, año y modalidad entre los turnos pertinentes de la retoma.", "Distinguir la pregunta sobre cómo se determina el precio de una elección de producto ya resuelta.", "Responder la consulta de ubicación con información vigente sin inferir reserva."],
+    "limites": "Las fechas separan distintas etapas del hilo y no una sola ráfaga de mensajes. No se inventa una regla de cálculo de precios a partir de la pregunta del cliente."
+  },
+  {
+    "id": "M16",
+    "titulo": "Corrección de producto después de un automatismo",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola  es para una suran2013  precio  colocación  incluida gracias", "Yo estoy buscando fundas"],
+    "contexto_observado": "El cliente consulta por una Suran 2013 y precio con colocación. El automatismo del negocio responde sobre cubrevolante; el cliente aclara que busca fundas.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Dar prioridad a la corrección explícita de producto hecha por el cliente.", "Conservar vehículo y año al corregir la ruta comercial.", "No arrastrar una cotización o descripción de cubrevolante a la consulta por fundas."],
+    "limites": "El desajuste se observó en el historial de Messenger; no se atribuye a un nodo o flujo de n8n sin evidencia técnica. No se modifica el guion con este registro."
+  },
+  {
+    "id": "M17",
+    "titulo": "Tarjeta en tres cuotas y dificultad con el apoyabrazos",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Lo tengo que hacer con tarjeta en tres cuotas, es la única opción que me queda", "La duda mía sigue siendo el apoya brazo de la butaca del conductor", "Porque no pude sacarla como me explicaste, no tiene ninguna tapa plástica", "Bueno ahí te envío"],
+    "contexto_observado": "Después de una cotización, el cliente expresa que necesita pagar con tarjeta en tres cuotas y retoma una duda sobre el apoyabrazos de la butaca del conductor. Indica que no pudo retirarlo siguiendo la explicación recibida y luego adjunta un video de 36 segundos. El destino indicado en el fragmento es San Luis; no se dispone del modelo en este tramo.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Registrar la preferencia de pago sin afirmar aprobación, disponibilidad de cuotas o condiciones no verificadas.", "Reconocer una dificultad técnica que persiste tras una explicación y conservar el contexto del apoyabrazos.", "Distinguir un video recibido de un video analizado y aplicar el límite aprobado de intervención de Candela para revisar material y casos técnicos."],
+    "limites": "El video no fue reproducido ni analizado. No se diagnostica la butaca ni se proponen instrucciones de desmontaje. La necesidad de cuotas expresada por el cliente no permite inferir otros datos financieros."
+  },
+  {
+    "id": "M18",
+    "titulo": "Precio, pagos y demora en un solo mensaje",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["hola para un peugeot 306 std año 1996\nque precio sería\nformas de pagos?\ntiempo de demora?\ncon tarjeta bancaria??"],
+    "contexto_observado": "El cliente envía un único mensaje de varias líneas que incluye vehículo y año, precio, formas de pago, tiempo de demora y una pregunta específica sobre tarjeta bancaria.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Detectar las distintas preguntas del mismo mensaje y no perder ninguna por procesar solo la primera o la última línea.", "Mantener modelo y año explícitos sin repetir su solicitud.", "Tratar precio, medios de pago y plazos con fuentes vigentes; distinguir qué tipo de demora debe aclararse si no está determinado por el contexto."],
+    "limites": "El mensaje no especifica envío o colocación ni diseño. Tiempo de demora puede requerir contexto adicional; no se asigna automáticamente a fabricación, transporte o turno."
+  },
+  {
+    "id": "M19",
+    "titulo": "Uso intensivo, protección, durabilidad y plazo de envío",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["hola soy de mndoza, mandan para un cronos? lisa q sale? gracias", "negro algun diseño clasico, es para un uber no me interesa mucho el diseño sino q no destruyan el tapizado y q la funda dure, q salen y q demora tienen para enviarlas?"],
+    "contexto_observado": "El cliente consulta por envío a Mendoza para un Cronos. Pide negro y un diseño clásico; explica que el vehículo se usa para Uber y prioriza proteger el tapizado y la duración de la funda sobre el diseño. También pregunta precio y demora de envío.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar la prioridad de protección y durabilidad, además de la preferencia de color y estilo.", "Atender precio y plazo sin desviar la conversación exclusivamente a elegir diseños.", "Evitar promesas absolutas de resistencia o duración y distinguir los plazos aplicables usando información aprobada."],
+    "limites": "No se deduce un año del vehículo ni una garantía específica. La expectativa de que no destruyan el tapizado pertenece al cliente; no es una promesa del negocio."
+  },
+  {
+    "id": "M20",
+    "titulo": "Dos diseños posibles, colores definidos y envío a Carlos Paz",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["tengo una ecoesport 2013, vivo en Carlos Paz,  hacen envíos y que costo tienen?", "Buenas tardes [asesora], disculpa la demora. Me gustan los modelos baston y ultra en gris oscuro y costuras marron oscuro, mi ecosport es mod 2013 Freestyl. Vivo en carlos paz . Cuando puedas me informas el costo , por favor?"],
+    "contexto_observado": "El cliente pregunta por envío y costo para una Ecosport 2013. En un mensaje posterior precisa la versión y manifiesta interés en dos diseños, baston y ultra, con gris oscuro y costuras marrón oscuro. Reitera el destino y el pedido de costo.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar versión, año, destino y preferencias detalladas de color y costura.", "No convertir el interés por dos diseños en una elección definitiva de uno de ellos.", "Interpretar el pedido de costo con su contexto y aclarar lo necesario para distinguir producto y envío según las fuentes y el guion aprobados."],
+    "limites": "La segunda cita fue anonimizada reemplazando el nombre de la asesora por [asesora]; el resto conserva la redacción recibida. No se infiere disponibilidad de diseño, combinación de colores ni precio de transporte."
+  }
+]

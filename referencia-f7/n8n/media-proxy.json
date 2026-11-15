@@ -1,0 +1,131 @@
+{
+  "updatedAt": "2026-04-13T20:23:10.936Z",
+  "createdAt": "2026-04-13T20:23:03.752Z",
+  "id": "Xsj8eVVkBFmD8boM",
+  "name": "Media Proxy F7",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "id": "webhook-media",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "f7-media",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "webhookId": "f7-media-proxy"
+    },
+    {
+      "id": "drive-download",
+      "name": "Drive Download",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        240,
+        0
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "jZ3KFY76r3SH4kqS",
+          "name": "Google Drive account"
+        }
+      },
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "={{ $json.query.id }}",
+          "mode": "id"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "respond-media",
+      "name": "Respond",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "respondWith": "binary",
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Drive Download",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Drive Download": {
+      "main": [
+        [
+          {
+            "node": "Respond",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true,
+    "saveExecutionProgress": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": null,
+  "nodeGroups": [],
+  "pinData": null,
+  "versionId": "c8f98a85-8231-485c-a293-e4458a6d2210",
+  "activeVersionId": null,
+  "versionCounter": 5,
+  "triggerCount": 1,
+  "sourceWorkflowId": null,
+  "shared": [
+    {
+      "updatedAt": "2026-04-13T20:23:03.757Z",
+      "createdAt": "2026-04-13T20:23:03.757Z",
+      "role": "workflow:owner",
+      "workflowId": "Xsj8eVVkBFmD8boM",
+      "projectId": "WZCliIiYld7FOEjs",
+      "project": {
+        "updatedAt": "2026-01-13T23:16:47.414Z",
+        "createdAt": "2026-01-13T23:15:51.670Z",
+        "id": "WZCliIiYld7FOEjs",
+        "name": "Mateo Morbiducci <mateomorbi19@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "customTelemetryTags": [],
+        "creatorId": "c6cb02b0-3af2-464e-8c21-b6395168bac0"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": null
+}

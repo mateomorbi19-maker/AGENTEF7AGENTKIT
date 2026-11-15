@@ -1,0 +1,123 @@
+[
+  {
+    "id": "M21",
+    "titulo": "Comparación de precios y rechazo por presupuesto",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Me interesan los dos precios, soy de zonz sur, Florencio Varela, pero voy casi todos los días a Caba", "No te voy a hacer perder tiempo, te agradezco, si me decido voy y listo, por el momento es caro para mí bolsillo, muchas gracias por tu tiempo"],
+    "contexto_observado": "En marzo de 2026, un cliente consulta por un Cronos y quiere conocer dos precios. Explica que vive en zona sur y suele ir a CABA. Después indica que el valor es caro para su presupuesto y deja una eventual decisión para más adelante.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar el pedido de comparación sin convertir la disponibilidad para ir a CABA en una reserva.", "Reconocer y respetar la negativa actual por presupuesto, sin insistir en un cierre ni inventar descuentos.", "No interpretar si me decido voy como una compra, visita agendada o compromiso confirmado."],
+    "limites": "El intercambio corresponde a marzo de 2026 y no establece precios actuales. Las citas no permiten inferir otros datos financieros ni fijar una política de seguimiento. Los criterios son propuestas de prueba, no cambios del guion."
+  },
+  {
+    "id": "M22",
+    "titulo": "Desconfianza ante la seña en un historial antiguo",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Info Cubre Volantes", "No ví nada está muy caro y cuando es con seña siempre da desconfianza"],
+    "contexto_observado": "El historial del 2 de enero de 2024 menciona un Fiat Siena. Incluye una entrada con apariencia de botón sobre cubrevolantes y, ante la cotización y la seña, una objeción que combina precio y desconfianza.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "mixta",
+    "criterios_propuestos": ["Distinguir la objeción de precio de la objeción de confianza, sin reducir ambas a una sola pregunta.", "Responder únicamente con información y garantías comerciales aprobadas, sin inventar excepciones a la seña.", "Respetar los motivos de derivación y el límite de intervención de Candela definidos en el guion vigente."],
+    "limites": "Caso histórico de 2024: ni la cotización ni las condiciones comunicadas entonces se toman como vigentes. La apariencia prearmada de Info Cubre Volantes no prueba su mecanismo técnico de origen."
+  },
+  {
+    "id": "M23",
+    "titulo": "Tres productos, preguntas pendientes y corrección de vehículo",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["También te consulto por el cubre volante y alfombra de goma trasera entera", "Me pasarían el precio total por las tres cosas?", "La colocación con qué cargo cuenta?", "Cubre volante y alfombra trasera de goma entera tienen?", "Pero solo me envían el precio del cubre volante a 72mil", "Por eso no les contesté más", "Cuál es el precio de cada una?", "No es una Suran, es un Fiat Cronos"],
+    "contexto_observado": "En octubre de 2026, el cliente consulta por fundas, cubrevolante y alfombra de goma trasera entera. Pide total, valores por producto y cargo de colocación. En el hilo aparecen varias respuestas automáticas sobre cubrevolante. El cliente explica que dejó de contestar porque solo recibía ese precio. Más adelante corrige la referencia del negocio a una Suran: su vehículo es un Fiat Cronos.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Mantener los tres productos y todas las preguntas pendientes, distinguiendo total, desglose, disponibilidad y colocación.", "Aplicar la corrección explícita de vehículo y volver a verificar los resultados que dependan de ese dato.", "Reconocer el motivo de interrupción expresado por el cliente sin seguir respondiendo exclusivamente por cubrevolante.", "Verificar la variante de alfombra solicitada, sin equiparar automáticamente una alfombra trasera entera con cualquier producto del catálogo."],
+    "limites": "72mil se conserva exclusivamente como cita literal del cliente, no como precio vigente ni resultado esperado. La multiplicidad de automatismos no permite atribuir un fallo a un nodo específico. No se infiere disponibilidad de alfombra trasera entera."
+  },
+  {
+    "id": "M24",
+    "titulo": "Disponibilidad de alfombra para Fiat Siena",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Alfombra para Fiat siena?", "Gracias"],
+    "contexto_observado": "En octubre de 2026, el cliente consulta por una alfombra para Fiat Siena. El negocio responde que no la fabrica y el cliente agradece.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Reconocer el producto alfombra y el modelo informado sin desplazar la consulta a fundas.", "Consultar la fuente vigente de compatibilidad o disponibilidad en lugar de reutilizar la respuesta histórica.", "Interpretar Gracias como agradecimiento y no como una compra o una nueva consulta."],
+    "limites": "La afirmación histórica del negocio sobre no fabricación no se toma como verdad vigente. No se dispone de año ni variante de alfombra en las citas."
+  },
+  {
+    "id": "M25",
+    "titulo": "Presupuesto, modalidad ambigua y pedido de funda toda en cuero",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola es para una Ecosport 2011", "Primero me encantaría pedirte presupuesto del valor!", "Exelente que necesitas saber?", "No voy a colocarlas allá!!!", "Podrían confeccionar un pedido a medida que sea todo cuero?"],
+    "contexto_observado": "En octubre de 2026, el cliente consulta por una Ecosport 2011, pide presupuesto y se muestra dispuesto a aportar información. Aparece una frase sobre no colocarlas allá y luego una consulta por confección a medida toda en cuero. Al final del tramo leído, el negocio responde que no cuenta con las medidas para las fundas tipo tapizado solicitadas.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Conservar modelo y año y reconocer el pedido de presupuesto.", "Interpretar la frase sobre colocación con el contexto completo y aclarar si es necesario, sin fijar una modalidad definitiva solo por la puntuación del fragmento.", "Verificar la variante de material o terminación solicitada y la compatibilidad vigente antes de prometer confección."],
+    "limites": "La afirmación histórica de falta de medidas no determina la disponibilidad actual. No se equipara todo cuero con cuero animal ni se confirma una variante comercial sin respaldo. La modalidad debe evaluarse en contexto."
+  },
+  {
+    "id": "M26",
+    "titulo": "Consulta de reventa desde un taller de detallado",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["hacen descuento para reventa? tenemos un taller de detallado automotriz y queremos incorporar nuevos artículos", "Buen día, tenemos un taller de detallado automotriz y queremos incorporar otro servicio, pero veo que son a pedido por tipo de auto o camioneta, somos de San Martin de Mendoza"],
+    "contexto_observado": "En marzo de 2026, un taller de detallado consulta por descuentos de reventa y la posibilidad de incorporar artículos o un servicio. El cliente advierte que la confección depende del vehículo e informa su localidad. El negocio deriva la consulta a atención humana de mayoristas.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Distinguir una consulta de reventa de una compra minorista para un vehículo individual.", "No inventar descuentos, mínimos, condiciones mayoristas ni acuerdos de distribución.", "Aplicar el motivo y procedimiento de derivación previstos en la documentación aprobada, conservando el contexto comercial aportado."],
+    "limites": "La derivación observada es un hecho del historial, no autorización para crear una política mayorista nueva. No se conserva identidad ni información de contacto del taller."
+  },
+  {
+    "id": "M27",
+    "titulo": "Recompra para otro vehículo y consulta por logo",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Siiii les compre a ustedes hace unos años la funda para nuestro cronos cuando apenas nos lo dieron!!! La verdad un  espectáculo sus fundas!", "Ahora queria saber para una camioneta ford ranger", "2026 soy de neuquen capital", "Tienen fundas con la palabra ranger?", "Las segundas con cuero automotor completas! De las mismas que les compre a mi autito", "Cuanto mas o menos salen??"],
+    "contexto_observado": "En octubre de 2026, el cliente relata una compra anterior de fundas para un Cronos y ahora consulta por una Ranger 2026 desde Neuquén. Pregunta por la palabra Ranger en la funda y relaciona su elección con el producto comprado antes. En el hilo aparece un video de 47 segundos y la referencia a las segundas.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Reconocer la recompra relatada y actualizar el vehículo objetivo a Ranger 2026 sin arrastrar la cotización del Cronos.", "Conservar la preferencia por fundas completas en cuero automotor y la consulta específica por la palabra Ranger.", "Resolver las segundas contra las opciones efectivamente presentadas, sin adivinar su orden.", "Verificar disponibilidad y condiciones de personalización y cotizar desde la fuente vigente, sin asumir que el producto anterior sigue idéntico."],
+    "limites": "El video no fue analizado. La referencia a una compra anterior proviene del relato del cliente y no de una verificación de pedidos. No se confirma disponibilidad de logos, precio ni igualdad técnica con las fundas anteriores."
+  },
+  {
+    "id": "M28",
+    "titulo": "Butacas adaptadas de origen incierto",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Yo tengo una boxer que tiene dos butacas ondividuales adelante de cuero y quiero renovarlo", "Dependiendo de cómo sea el proceso, es una boxer pero tiene puestas dos butacas de otra camioneta la compré así que tenían tapizado en cuero y está dañado y por eso quisiera hacerlo nuevo", "Es que al no ser ascientos originales del vehículo calculo que lo deben ver", "Para realizarlo", "Creo que de amarok o una así", "Me la vendieron ya con las butacas"],
+    "contexto_observado": "Entre agosto y septiembre de 2026, el cliente consulta por renovar dos butacas delanteras individuales instaladas en una Boxer. Explica que no son originales del vehículo, que el tapizado está dañado y que desconoce con certeza su procedencia. Menciona Amarok como posibilidad, no como dato confirmado.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["No determinar compatibilidad exclusivamente por el chasis Boxer cuando el cliente informa butacas adaptadas.", "Mantener el origen Amarok como incierto y no convertirlo en un dato confirmado.", "Distinguir renovación o reparación de tapizado de una funda cuando la intención todavía requiera precisión.", "Aplicar el tratamiento aprobado para casos que necesitan revisión humana o inspección, sin prometer ajuste o confección."],
+    "limites": "No se identificaron técnicamente las butacas ni se verificó el alcance del daño. La necesidad de que las vean es una expectativa del cliente; esta ficha no define un procedimiento nuevo de inspección."
+  },
+  {
+    "id": "M29",
+    "titulo": "Experiencia previa con una funda dañada y consulta posterior",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Hola el día sábado atienden quiero ir personalmente por que compré una por mercado pago y vino angosta y como tiramos se rompió y no le puedo devolver muchas gracias", "Tengo una duster modelo 2026 costo aproximado"],
+    "contexto_observado": "El historial entre mayo y septiembre de 2026 incluye una consulta por atención el sábado y una visita presencial. El cliente relata una compra mediante Mercado Pago de una funda que resultó angosta y se rompió al tirar. No queda identificado el vendedor de esa compra. En una consulta posterior pide costo aproximado para una Duster 2026.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Reconocer la experiencia negativa relatada sin clasificarla automáticamente como reclamo por una venta de F7.", "No prometer devolución, garantía o reparación sin verificar el origen de la compra y las condiciones aplicables.", "Atender la pregunta por horario con información vigente y distinguirla de la consulta posterior de presupuesto.", "Preservar la separación temporal entre el incidente relatado y la consulta por la Duster."],
+    "limites": "Mercado Pago se conserva como medio mencionado por el cliente; no se transforma en Mercado Libre ni identifica al vendedor. No se verificaron compra, responsabilidad, garantía ni derecho a devolución."
+  },
+  {
+    "id": "M30",
+    "titulo": "Corrección de configuración después de una cotización",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Que modelos tenés para una Saveiro 97 similar senda", "Envio", "Quiero saber si valor por faavor", "Son dos butacs", "Es cabina simplw"],
+    "contexto_observado": "En octubre de 2026, el cliente pregunta por una Saveiro 97, elige envío y solicita el valor. Después de recibir una cotización aclara que son dos butacas y cabina simple. El negocio corrige el valor en el historial.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Actualizar la configuración con los datos explícitos de dos butacas y cabina simple.", "Revisar la cotización mediante la fuente vigente cuando cambia un dato que puede afectar su aplicabilidad.", "No sostener el importe anterior por inercia ni reutilizar un valor histórico como resultado esperado.", "Conservar la modalidad de envío durante la corrección."],
+    "limites": "No se reproducen los importes históricos ni se afirma cuánto debe variar la cotización. Los errores de escritura se conservan literales."
+  },
+  {
+    "id": "M31",
+    "titulo": "Solicitud de alias, afirmación de pago y coordinación de turno",
+    "fecha_observacion": "2026-11-03",
+    "mensajes_cliente": ["Pásame el precio y un alias para la seña", "Ya la mandé", "Avísame cuando lo veas acreditado", "Lunes 16hs en caba", "Estoy esperando que actualice. Y te lo mando por acá", "Gracias, hasta el lunes!"],
+    "contexto_observado": "En un historial de cubrevolante del 22 de enero de 2025, el cliente pide precio y alias para señar. Luego afirma haber enviado el pago, solicita confirmación de acreditación y participa en la coordinación de un turno. El negocio envía datos de pago y una confirmación de turno en el intercambio histórico.",
+    "respaldo": "hilo_leido",
+    "tipo_entrada": "espontanea",
+    "criterios_propuestos": ["Reconocer la intención explícita de avanzar y aplicar el pase a Candela conforme al contrato vigente para cierre, cobro y agenda.", "Distinguir la afirmación Ya la mandé de una acreditación verificada.", "No confirmar pago, emitir datos bancarios ni crear un turno a partir de estas citas fuera del circuito autorizado.", "Conservar la solicitud de horario como contexto para la atención humana sin tratar una fecha histórica como cita actual."],
+    "limites": "Caso histórico de enero de 2025. Se excluyen alias, correos, identidad y comprobantes completos. No se verificó un pago ni se creó o modificó un turno. Estas fichas documentan conversaciones leídas; no constituyen pruebas ejecutadas contra el agente."
+  }
+]

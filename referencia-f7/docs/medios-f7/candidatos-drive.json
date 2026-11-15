@@ -1,0 +1,93 @@
+{
+  "fecha_relevamiento": "2026-11-04",
+  "alcance": "Búsqueda acotada en Google Drive por nombre de carpetas y productos F7. Archivos recuperados desde carpetas comerciales que comparten el padre 17z39976kWHtrgZbjoNRfRzM2vIoHRaDb. Alfombras también contiene N8N01, el video demo ya configurado. No se modificaron permisos, archivos de Drive ni workflows.",
+  "limite": "Los IDs son distintos a los tres IDs inaccesibles de n8n. No se afirma reemplazo exacto ni envío actual por Messenger sin comparación específica. El estado de las tres referencias n8n sigue pendiente.",
+  "archivos": [
+    {
+      "id": "DRV01",
+      "estado_evidencia": "biblioteca_drive_f7_no_contrastado_messenger",
+      "drive_file_id": "1lSuOW5DsZIYLWdhmxWzBPtmTtgoklUmC",
+      "fuente_url": "https://drive.google.com/file/d/1lSuOW5DsZIYLWdhmxWzBPtmTtgoklUmC/view?usp=drivesdk",
+      "nombre_original": "Reel 2 FINAL.mp4",
+      "carpeta_id": "1hQ8IQynCliyNE3tPpBVaNGNYtq4LN_G7",
+      "mime": "video/mp4",
+      "ruta_local": "recursos/f7-media/_ingesta_drive_candidatos/DRV01-comparacion-fundas-reel2.mp4",
+      "producto": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "carpeta": "Diferencia tapizado y fundas a medida",
+      "bytes": 71793816,
+      "sha256": "b60aeabe8a06995158e46dff4ac7529587978c20afd2bdaf213b320bab9bf0f7",
+      "ancho": 2160,
+      "alto": 3840,
+      "duracion_segundos": 34.271995,
+      "pista_audio": true,
+      "codec_video": "hevc",
+      "observacion_visual": "Presentador con chomba F7 dentro de un Cronos, señalando funda negra/gris de costuras horizontales; subtítulos comerciales rojos y blancos. Hacia el final camina al lado del Cronos. Dura 34,27 s: no es el mismo archivo que MP01 de Messenger de 46,97 s.",
+      "fotogramas_inspeccionados": [
+        3,
+        32
+      ],
+      "descarga_original_sin_conversion": true,
+      "tamano_coincide_metadata": true,
+      "verificado_en_messenger": false
+    },
+    {
+      "id": "DRV02",
+      "estado_evidencia": "biblioteca_drive_f7_no_contrastado_messenger",
+      "drive_file_id": "19_cxwbJ0pao9IYvq4xqiwiUvnoeikLl1",
+      "fuente_url": "https://drive.google.com/file/d/19_cxwbJ0pao9IYvq4xqiwiUvnoeikLl1/view?usp=drivesdk",
+      "nombre_original": "1C507D51-372D-4271-A982-385A333E620B.MP4",
+      "carpeta_id": "11EFt_QAF5bWEz80xIySRndmvvPiSFm5Q",
+      "mime": "video/mp4",
+      "ruta_local": "recursos/f7-media/_ingesta_drive_candidatos/DRV02-cubrevolante.mp4",
+      "producto": [
+        "cubrevolante"
+      ],
+      "carpeta": "Cubre  volante",
+      "bytes": 28876028,
+      "sha256": "bc7d87a417dd3abe89dcb92402418a470dc03d20b66ea6a3b7a845d4bd17ca53",
+      "ancho": 1080,
+      "alto": 1920,
+      "duracion_segundos": 15.2,
+      "pista_audio": true,
+      "codec_video": "h264",
+      "observacion_visual": "Volante Volkswagen en exhibidor de rejilla negro. Recubrimiento negro con secciones perforadas y costura roja en el borde interno.",
+      "fotogramas_inspeccionados": [
+        2
+      ],
+      "descarga_original_sin_conversion": true,
+      "tamano_coincide_metadata": true,
+      "verificado_en_messenger": false
+    },
+    {
+      "id": "DRV03",
+      "estado_evidencia": "biblioteca_drive_f7_no_contrastado_messenger",
+      "drive_file_id": "1sp2t49211rUojUjKboD6T0nrBR73qxBb",
+      "fuente_url": "https://drive.google.com/file/d/1sp2t49211rUojUjKboD6T0nrBR73qxBb/view?usp=drivesdk",
+      "nombre_original": "e8cf672a-9fbd-4778-be6d-cfdd0372dfda.mov",
+      "carpeta_id": "1i24bfL1oOA_f221yrG5aN5T_r-hvDhr5",
+      "mime": "video/quicktime",
+      "ruta_local": "recursos/f7-media/_ingesta_drive_candidatos/DRV03-alfombra-presentacion.mov",
+      "producto": [
+        "alfombra"
+      ],
+      "carpeta": "Alfombras",
+      "bytes": 6276468,
+      "sha256": "05fc39647ba5c5752d426fcba7d85cb9cb29b65ee84a8186c31301a84e3736d2",
+      "ancho": 720,
+      "alto": 1280,
+      "duracion_segundos": 18.018333,
+      "pista_audio": false,
+      "codec_video": "h264",
+      "observacion_visual": "Una mano levanta/dobla una alfombra negra para mostrar espesor y reverso; fondo con piso ajedrezado negro/blanco, césped y borde azul.",
+      "fotogramas_inspeccionados": [
+        2
+      ],
+      "descarga_original_sin_conversion": true,
+      "tamano_coincide_metadata": true,
+      "verificado_en_messenger": false
+    }
+  ]
+}

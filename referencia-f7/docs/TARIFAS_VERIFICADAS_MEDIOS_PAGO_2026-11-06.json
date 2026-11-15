@@ -1,0 +1,59 @@
+{
+  "consultado_en": "2026-11-06T13:31:07.565Z",
+  "spreadsheet_id": "1dl7hNofQp8v57h1Veodd3XqFctJxAvgAA2qXVtnE1ZU",
+  "fuente": "Google Sheets conectado, lectura directa de valores numéricos",
+  "rangos": [
+    {
+      "range": "'Fundas a medida'!A137:C137",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "SURAN 2017-2019",
+          385000,
+          466092
+        ]
+      ]
+    },
+    {
+      "range": "'Fundas a medida'!A70:C70",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          "CRONOS",
+          353000,
+          427350
+        ]
+      ]
+    },
+    {
+      "range": "'TIPO TAPIZADO'!A4:C5",
+      "majorDimension": "ROWS",
+      "values": [
+        [
+          null,
+          "EFECTIVO",
+          "TRANF"
+        ],
+        [
+          "Cronos  ",
+          550000,
+          665500
+        ]
+      ]
+    },
+    {
+      "range": "Otros!A3:D4",
+      "majorDimension": "ROWS",
+      "values": [
+        [],
+        [
+          "CUBRE VOLANTE",
+          60000,
+          72600,
+          79134
+        ]
+      ]
+    }
+  ],
+  "regla_cuotas": "Por autorización de Mateo, cuotas = transferencia. No POSNET."
+}

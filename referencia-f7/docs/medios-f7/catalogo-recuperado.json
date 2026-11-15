@@ -1,0 +1,929 @@
+{
+  "fecha_catalogacion": "2026-11-04",
+  "estado": "Inventario verificado de los 20 archivos recuperados al 2026-11-04. Las referencias n8n inaccesibles y la verificación Messenger de los candidatos siguen pendientes.",
+  "alcance": "Copias organizadas de archivos descargados de Messenger y Google Drive. Los originales de ingesta se conservan sin editar ni recomprimir. No se afirma cobertura de todo el historial ni de todos los productos.",
+  "criterio_evidencia": {
+    "messenger": "Archivo servido por Messenger y descargado desde la pieza comercial enviada por F7, identificado por el operador de la revisión. Esto acredita esa versión recuperada; no acredita que sea el archivo de máxima resolución originalmente subido.",
+    "configurado_n8n": "Archivo recuperado de una referencia del workflow vivo Herramienta fotos. No implica que haya sido enviado en las conversaciones revisadas.",
+    "comparacion": "La coincidencia visual se declara por separado de la identidad binaria. Las copias organizadas deben tener el mismo SHA-256 que su ingesta.",
+    "inspeccion": "Imágenes completas; videos por muestreo de frames y metadatos locales. Audio de videos Messenger presente, no transcripto ni validado.",
+    "limites_comerciales": "La inspección visual no acredita composición del material, calidad técnica, disponibilidad actual ni condiciones comerciales. Los nombres visibles se conservan como texto de la pieza.",
+    "drive_candidato_no_confirmado_en_messenger": "Archivo recuperado de una carpeta comercial de Drive vinculada a F7. No contrastado como envío actual en Messenger; ID distinto a las referencias inaccesibles de n8n."
+  },
+  "referencias": "docs/medios-f7/referencias-n8n.json",
+  "archivos": [
+    {
+      "id": "N8N01",
+      "titulo": "Colocación y ajuste de alfombra",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Drive Descargar Video Alfombra"
+        ],
+        "drive_file_id": "1GGQ-YUMuux8s9AfSQSe5ep5OkrLHnOAp",
+        "nombre_original": "d32ce828-90bb-4fd4-a62b-440c86cd1e52.MP4",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/alfombra_video_demostracion.mp4",
+      "ruta_organizada": "recursos/f7-media/alfombra/videos/N8N01-colocacion-alfombra-configurado.mp4",
+      "producto_observado": [
+        "alfombra"
+      ],
+      "producto_asociado_por_configuracion": [
+        "alfombra"
+      ],
+      "compartido_fundas_tipo_tapizado": false,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Video de demostración posterior al video de introducción",
+      "contenido_observado": "Video vertical de manos colocando y ajustando una alfombra negra de bordes elevados en el sector de los pedales y laterales del piso del vehículo. Muestra acercamientos de la textura y del ajuste contra la consola. Logo F7 en una esquina.",
+      "textos_visibles": [],
+      "confianza_visual": "alta",
+      "limites": "No se verificó este video en Messenger; la categoría termoformada proviene de la configuración, no se acredita solo por imagen.",
+      "preview": "recursos/f7-media/_previews/alfombra-contacto-4s.jpg",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "22abb8d5707b189a303e03e735c18b374fe84f7e8599c39772a9634a6fae4340",
+      "bytes": 3091033,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 480,
+      "alto": 848,
+      "codec": "h264",
+      "duracion_segundos": 17.066667,
+      "pista_audio": false,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/N8N01.jpg"
+    },
+    {
+      "id": "N8N03",
+      "titulo": "Carta de colores, costuras, vivos y logos",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Drive Descargar Imagen Colores",
+          "TT Drive Imagen Colores",
+          "Pers Preparar Imagenes",
+          "Disc Drive Img 3"
+        ],
+        "drive_file_id": "1Gj8nftQOonYmzGW_TnPuZyDA9SF--RUk",
+        "nombre_original": "Colores.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/colores.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/colores/N8N03-carta-colores-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Carta de colores; reutilizada en catálogo y rutas de diseños discretos/personalizados",
+      "contenido_observado": "Lámina de personalización: siete colores de cuero rotulados, ocho de costuras, doce de vivos y una selección de logos de marcas de vehículos.",
+      "textos_visibles": [
+        "FUNDAS EN CUERO AUTOMOTOR CONFECCIONADAS A MEDIDA"
+      ],
+      "confianza_visual": "alta",
+      "limites": "No aparece «tipo tapizado» en la lámina; el uso compartido se registra por configuración. Los colores y marcas visibles no prueban disponibilidad actual.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "e1b7d18b78672c3823e20524696d49bae7048d773cd4e68f0aabd44ccf2ac9ca",
+      "bytes": 117479,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "N8N05",
+      "titulo": "Recorrido de asientos delanteros y traseros",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Drive Video Calidad 1"
+        ],
+        "drive_file_id": "1hHxM9VDz5xI2SFbWzDe1o2Kfj_eatOHx",
+        "nombre_original": "video_calidad_2.mp4",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/video_calidad_2.mp4",
+      "ruta_organizada": "recursos/f7-media/fundas/videos/N8N05-recorrido-asientos-configurado.mp4",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Primer video de la rama video_calidad",
+      "contenido_observado": "Recorrido vertical de un vehículo con fundas negras/gris oscuro, costuras claras repetidas en V y vivos claros: delanteras, laterales, parte posterior del respaldo delantero y asiento trasero.",
+      "textos_visibles": [],
+      "confianza_visual": "alta",
+      "limites": "No hay rótulo que confirme una variante comercial. Archivo original video_calidad_2.mp4, usado por el nodo Drive Video Calidad 1; se conserva la distinción entre orden del nodo y nombre del archivo.",
+      "preview": "recursos/f7-media/_previews/calidad2-contacto-4s.jpg",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "c7b6a9926f2201836792150f42688a12e10c18af216bce665382861ee8b7375c",
+      "bytes": 4895496,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 464,
+      "alto": 832,
+      "codec": "h264",
+      "duracion_segundos": 33.446667,
+      "pista_audio": false,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/N8N05.jpg"
+    },
+    {
+      "id": "N8N06",
+      "titulo": "Asiento trasero con respaldo rebatible",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Drive Video Calidad 2"
+        ],
+        "drive_file_id": "1rNsh1N5J68PFj16MeelLFHQLRfM13Ffg",
+        "nombre_original": "video_calidad_1.mp4",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/video_calidad_1.mp4",
+      "ruta_organizada": "recursos/f7-media/fundas/videos/N8N06-respaldo-rebatible-configurado.mp4",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Segundo video de la rama video_calidad",
+      "contenido_observado": "Acercamiento al asiento trasero con fundas oscuras y costuras claras repetidas en V. Una persona acciona y rebate una sección del respaldo; se ve su parte posterior.",
+      "textos_visibles": [],
+      "confianza_visual": "alta",
+      "limites": "La secuencia muestra el uso del respaldo; no acredita compatibilidad universal. Archivo original video_calidad_1.mp4, usado por el nodo Drive Video Calidad 2.",
+      "preview": "recursos/f7-media/_previews/calidad1-contacto-3s.jpg",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "47ecbc7b83709aac43a884a164994262f4d165c9c871d73729aeca5c9eb7eef0",
+      "bytes": 1672164,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 464,
+      "alto": 832,
+      "codec": "h264",
+      "duracion_segundos": 11.505,
+      "pista_audio": false,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/N8N06.jpg"
+    },
+    {
+      "id": "N8N07",
+      "titulo": "Ejemplo negro y beige con logo Toyota (alias VIP)",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Disc Drive Img 1",
+          "Pers Preparar Imagenes"
+        ],
+        "drive_file_id": "1w2MsShNgg4UqEIa0o1w-H7kyAlg6pqiM",
+        "nombre_original": "VIP.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/diseno_vip.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/N8N07-ejemplo-negro-beige-alias-vip-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Diseño VIP; ramas discreto y personalizado",
+      "contenido_observado": "Dos butacas delanteras con fundas negras, laterales beige, costuras claras en V y logos Toyota bordados. Flechas señalan vivo, costura, logo y lateral.",
+      "textos_visibles": [
+        "FUNDAS A MEDIDA",
+        "VIVO",
+        "COSTURA",
+        "LOGO",
+        "LATERAL"
+      ],
+      "confianza_visual": "alta",
+      "limites": "VIP es alias del archivo/configuración: no aparece escrito en la pieza. El mismo ejemplo fotográfico aparece dentro de la lámina Diamante bajo «DIAMANTE COMÚN». Se conserva el alias sin corregir el guion ni reclasificar el modelo comercial.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "1cc519b3805d6debc0c2d8100ec0771e6b6a21b4354e40ad033f21bc109c459e",
+      "bytes": 111444,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "N8N08",
+      "titulo": "Ejemplo negro y rojo con franjas horizontales (alias Bastón)",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Disc Drive Img 2",
+          "Pers Preparar Imagenes"
+        ],
+        "drive_file_id": "1gba1nUULpkc8ShWyteUkGYFpF4DQa8Qg",
+        "nombre_original": "Baston.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/diseno_baston.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/N8N08-ejemplo-negro-rojo-alias-baston-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Diseño Baston; ramas discreto y personalizado",
+      "contenido_observado": "Dos butacas delanteras negras y rojas con panel central dividido en franjas horizontales mediante costuras y laterales rojos. Marca F7 y flechas descriptivas.",
+      "textos_visibles": [
+        "FUNDAS A MEDIDA",
+        "LOGO"
+      ],
+      "confianza_visual": "alta",
+      "limites": "Bastón es alias del archivo/configuración: no aparece escrito en la pieza. El rótulo LOGO apunta a un lateral rojo, sin bordado claramente visible.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "64af53407461cbfc6809cd7a965054098597766e9ea0aa17257f2c95a9efd226",
+      "bytes": 182692,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "N8N09",
+      "titulo": "Lámina Modelo Hexagonal",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Pers Preparar Imagenes"
+        ],
+        "drive_file_id": "17gjUTzNMKA7F5uc9ExBqBRQVuwo5xq5i",
+        "nombre_original": "Modelo hexagonal.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/diseno_hexagonal.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/N8N09-modelo-hexagonal-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Diseño hexagonal; rama personalizado",
+      "contenido_observado": "Lámina de cuatro fotos de asientos delanteros y traseros: combinación negra con patrón hexagonal y combinación negro/rojo bajo el rótulo deportivo. Logos Toyota visibles en delanteras negras.",
+      "textos_visibles": [
+        "MODELO HEXAGONAL",
+        "MODELO HEXAGONAL DEPORTIVO"
+      ],
+      "confianza_visual": "alta",
+      "limites": "Nombre de modelo confirmado visualmente. No aparece «tipo tapizado»; uso compartido registrado por configuración.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "7c2227b3cd91305437c34ce237d66a9f3c90169178d03cd7fb63574aa34a2987",
+      "bytes": 119522,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "N8N10",
+      "titulo": "Lámina Modelo Diamante",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Pers Preparar Imagenes"
+        ],
+        "drive_file_id": "1JfFlXTxD7PZJUimiYk9Qq6-9Gwb255hH",
+        "nombre_original": "Modelo diamante.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/diseno_diamante.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/N8N10-modelo-diamante-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Diseño diamante; rama personalizado",
+      "contenido_observado": "Lámina con tres fotos: delanteras negro/beige con logo Toyota arriba a la izquierda, delanteras claras con costuras oscuras abajo a la izquierda, asiento trasero negro/rojo a la derecha. Costuras amplias en V/diamante.",
+      "textos_visibles": [
+        "MODELO DIAMANTE",
+        "En el color y modelo que te guste",
+        "DIAMANTE COMÚN"
+      ],
+      "confianza_visual": "alta",
+      "limites": "La foto negro/beige también aparece en el archivo configurado como VIP. No se considera duplicado binario de aquel.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "ad480d549f1e0d997a3a1d9eaf3629f9473b5f4fe1eafb29b86f5b708758ff11",
+      "bytes": 99648,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "N8N11",
+      "titulo": "Lámina Modelo Ultra",
+      "fuente": {
+        "tipo": "configurado_n8n",
+        "workflow_id": "2J6b3QjDiDxFKYC4",
+        "nodos": [
+          "Pers Preparar Imagenes"
+        ],
+        "drive_file_id": "1WlUlJpKXfPTj4RgbmytEw60q-iFDPjUI",
+        "nombre_original": "Modelo ultra.jpg",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_n8n/diseno_ultra.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/N8N11-modelo-ultra-configurado.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Configuración de n8n; las imágenes no nombran explícitamente tipo tapizado.",
+      "uso_configurado": "Diseño ultra; rama personalizado",
+      "contenido_observado": "Lámina con delanteras y traseras negras, costuras repetidas en V y vivos claros; abajo, delanteras negro/azul bajo rótulo deportivo. Marca F7.",
+      "textos_visibles": [
+        "MODELO ULTRA",
+        "MODELO ULTRA DEPORTIVO"
+      ],
+      "confianza_visual": "alta",
+      "limites": "Nombre de modelo confirmado visualmente. No aparece «tipo tapizado»; uso compartido registrado por configuración.",
+      "preview": null,
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "bfde1681a316918202af741bd4492b31ba6fd555f43b84936e2a354d40f55c30",
+      "bytes": 105285,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP01",
+      "titulo": "Comparación: fundas a medida y fundas tipo tapizado",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "muestra adicional",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "botón Descargar de la pieza enviada por F7",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP01-comparacion-fundas-47s.mp4",
+      "ruta_organizada": "recursos/f7-media/fundas/videos/MP01-comparacion-fundas-y-tipo-tapizado-messenger.mp4",
+      "producto_observado": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Ambos rótulos aparecen en el video.",
+      "contenido_observado": "Primero presenta FUNDAS A MEDIDA: ejemplo negro con franjas horizontales, vista frontal y laterales, parte trasera de textura textil y apoyacabeza. Entre los segundos 26 y 28 cambia a FUNDAS TIPO TAPIZADO: ejemplos oscuros con costuras geométricas, logo CRONOS rojo, vivos rojos y parte posterior con apariencia de cuero y bolsillo.",
+      "orden_visual": [
+        {
+          "orden": 1,
+          "rotulo": "FUNDAS A MEDIDA",
+          "tiempo_aproximado": "Inicio hasta al menos 26 s"
+        },
+        {
+          "orden": 2,
+          "rotulo": "FUNDAS TIPO TAPIZADO",
+          "tiempo_aproximado": "Ya visible a 28 s; continúa hasta el final"
+        }
+      ],
+      "textos_visibles": [
+        "FUNDAS A MEDIDA",
+        "FUNDAS TIPO TAPIZADO",
+        "100% CUERO AUTOMOTOR",
+        "CRONOS"
+      ],
+      "confianza_visual": "alta",
+      "limites": "Comparación de opciones confirmada por rótulos y frames. Las referencias a cuero son texto publicitario del video, no validación de material. No se escuchó/transcribió el audio. No se puede comparar contra N8N02 porque ese original no fue recuperado.",
+      "preview": "recursos/f7-media/_previews/MP01-contacto-5s.jpg",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "8df4f93fa851bd7c58787fbb45bd595f7f176875466a45e8ebaa115f2a89df94",
+      "bytes": 7339637,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 576,
+      "alto": 1024,
+      "codec": "h264",
+      "duracion_segundos": 46.966667,
+      "pista_audio": true,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/MP01.jpg"
+    },
+    {
+      "id": "MP02",
+      "titulo": "Presentación de fundas a medida",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "pieza enviada por F7",
+        "verificado_en_messenger": true,
+        "contexto": "Tras elegir envío; texto acompañante: Este es el tipo de funda que podriamos confeccionar para tu vehiculo"
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP02-presentacion-fundas-28s.mp4",
+      "ruta_organizada": "recursos/f7-media/fundas/videos/MP02-presentacion-fundas-a-medida-messenger.mp4",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": false,
+      "contenido_observado": "Muestra solo FUNDAS A MEDIDA: dos asientos negros con franjas horizontales, acercamientos a frente y lateral, parte trasera de textura textil y apoyacabeza. Cierra con logo F7 sobre fondo negro.",
+      "textos_visibles": [
+        "FUNDAS A MEDIDA"
+      ],
+      "confianza_visual": "alta",
+      "limites": "Comparte escenas observables con la primera parte de MP01; se conservan ambos videos por ser montajes y duraciones distintos. No se escuchó/transcribió el audio. No se deduce variante tipo tapizado para esta pieza.",
+      "preview": "recursos/f7-media/_previews/MP02-contacto-4s.jpg",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "1c383aa1856c1a4487d42066053533538df1e588096009287376cefdbed5108a",
+      "bytes": 4268880,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 576,
+      "alto": 1024,
+      "codec": "h264",
+      "duracion_segundos": 28.166667,
+      "pista_audio": true,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/MP02.jpg"
+    },
+    {
+      "id": "MP03",
+      "titulo": "Lámina Modelo Diamante enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen enviada por F7; versión WebP servida por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP03-diamante.webp",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/MP03-modelo-diamante-messenger.webp",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Lámina MODELO DIAMANTE, con las mismas tres fotos, textos y composición que N8N10: delanteras negro/beige con Toyota, delanteras claras, asiento trasero negro/rojo.",
+      "textos_visibles": [
+        "MODELO DIAMANTE",
+        "En el color y modelo que te guste",
+        "DIAMANTE COMÚN"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N10",
+        "resultado": "misma composición visual; distinta versión de archivo",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1, reduciendo N8N10 a 480×679 con Lanczos y convirtiendo ambas a yuv420p.",
+        "ssim_all": 0.98805,
+        "limite": "La similitud no acredita identidad del archivo ni resolución original subida. Messenger entrega WebP de 480×679; Drive JPG de 905×1280."
+      },
+      "limites": "No se infiere disponibilidad actual ni uso con tipo tapizado solo por esta imagen.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "e2ee885760907b3974ef4303af3e5e983a44af82f09178f60e9bf951aebb63af",
+      "bytes": 28720,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 480,
+      "alto": 679,
+      "codec": "webp",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP04",
+      "titulo": "Carta de colores, costuras, vivos y logos enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP04-colores-logos.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/colores/MP04-carta-colores-messenger.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Lámina de personalización con los mismos textos, siete colores de cuero, ocho colores de costuras, doce colores de vivos y once logos que N8N03; mismo orden y composición.",
+      "textos_visibles": [
+        "FUNDAS EN CUERO AUTOMOTOR CONFECCIONADAS A MEDIDA"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N03",
+        "resultado": "misma composición visual; distinta versión de archivo",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1; resolución nativa 905×1280, conversión de ambas a yuv420p sin redimensionar.",
+        "ssim_all": 0.999878,
+        "limite": "La métrica complementa la inspección visual; no prueba identidad binaria ni equivalencia comercial."
+      },
+      "limites": "No se infiere disponibilidad actual ni uso con tipo tapizado solo por esta imagen.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "a935e35846d516e23f33a8bdecad10b4061bcec16da6df633bdc4f6ed8bbaba7",
+      "bytes": 132865,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP05",
+      "titulo": "Lámina Modelo Bastón enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP05-baston.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/MP05-modelo-baston-messenger.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Lámina blanca titulada MODELO BASTÓN, con tres fotos: Bastón chico arriba derecha, negro con franjas horizontales estrechas; Bastón grande a la izquierda, negro con franjas más anchas y costuras rojizas; Bastón deportivo abajo derecha, negro con laterales claros. Marca F7.",
+      "textos_visibles": [
+        "MODELO BASTÓN",
+        "BASTON CHICO",
+        "BASTÓN GRANDE",
+        "BASTON DEPORTIVO"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N08",
+        "resultado": "pieza visualmente distinta",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1; resolución nativa 905×1280, conversión de ambas a yuv420p sin redimensionar.",
+        "ssim_all": 0.408551,
+        "limite": "La métrica complementa la inspección visual; no prueba identidad binaria ni equivalencia comercial."
+      },
+      "limites": "Pieza distinta de N8N08: Messenger presenta una lámina de tres variantes con títulos; el archivo configurado es una foto única negro/rojo con flechas, sin el título Bastón.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "50eac2b9c85c7af0e842f571be0d3d61373d4cbab2d13a342037f1f88adf34e4",
+      "bytes": 117830,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP06",
+      "titulo": "Lámina Modelo VIP enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP06-vip.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/MP06-modelo-vip-messenger.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Lámina titulada MODELO VIP con tres fotos: delanteras negras con vivos y costuras rojas a la izquierda, asiento trasero negro arriba derecha y delanteras negras con laterales grises y vivos claros abajo derecha junto al texto Modelo VIP deportivo. Patrón repetido de V y marca F7.",
+      "textos_visibles": [
+        "MODELO VIP",
+        "Modelo VIP deportivo"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N07",
+        "resultado": "pieza visualmente distinta",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1; resolución nativa 905×1280, conversión de ambas a yuv420p sin redimensionar.",
+        "ssim_all": 0.471139,
+        "limite": "La métrica complementa la inspección visual; no prueba identidad binaria ni equivalencia comercial."
+      },
+      "limites": "Pieza distinta de N8N07: Messenger confirma visualmente el nombre VIP en una lámina de tres fotos; el archivo configurado usa una foto única negro/beige con Toyota y flechas, sin título VIP, que también aparece en Diamante.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "d0a243dada61bbce809314e4df2874599d852675a2dc770c043a2449da8976eb",
+      "bytes": 102547,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP07",
+      "titulo": "Lámina Modelo Hexagonal enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP07-hexagonal.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/MP07-modelo-hexagonal-messenger.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Misma lámina visual que N8N09: cuatro fotos de delanteras y traseras con patrón hexagonal, negras y variante deportiva negro/rojo; mismos títulos, posiciones y encuadres.",
+      "textos_visibles": [
+        "MODELO HEXAGONAL",
+        "MODELO HEXAGONAL DEPORTIVO"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N09",
+        "resultado": "misma composición visual; distinta versión de archivo",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1; resolución nativa 905×1280, conversión de ambas a yuv420p sin redimensionar.",
+        "ssim_all": 0.999873,
+        "limite": "La métrica complementa la inspección visual; no prueba identidad binaria ni equivalencia comercial."
+      },
+      "limites": "No se infiere disponibilidad actual ni uso con tipo tapizado solo por esta imagen.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "31edb8ff36b932866a9be7615690a08f5ebedcf8d8a094a5a61be7fd0760a199",
+      "bytes": 126264,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "MP08",
+      "titulo": "Lámina Modelo Ultra enviada por Messenger",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_messenger/MP08-ultra.jpg",
+      "ruta_organizada": "recursos/f7-media/fundas/disenos/MP08-modelo-ultra-messenger.jpg",
+      "producto_observado": [
+        "fundas"
+      ],
+      "compartido_fundas_tipo_tapizado": null,
+      "contenido_observado": "Misma lámina visual que N8N11: delanteras y traseras negras arriba con costuras repetidas en V y vivos claros; deportivo negro/azul abajo. Mismos títulos y tres fotografías.",
+      "textos_visibles": [
+        "MODELO ULTRA",
+        "MODELO ULTRA DEPORTIVO"
+      ],
+      "confianza_visual": "alta",
+      "comparacion": {
+        "con": "N8N11",
+        "resultado": "misma composición visual; distinta versión de archivo",
+        "identidad_binaria": false,
+        "metodo": "Comparación visual de ambas imágenes completas y SSIM en FFmpeg 9.0.1; resolución nativa 905×1280, conversión de ambas a yuv420p sin redimensionar.",
+        "ssim_all": 0.999894,
+        "limite": "La métrica complementa la inspección visual; no prueba identidad binaria ni equivalencia comercial."
+      },
+      "limites": "No se infiere disponibilidad actual ni uso con tipo tapizado solo por esta imagen.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "imagen",
+      "sha256": "7a9eab10353a4202e457c008ab6c40296d66db1b91ff042b16c58b7e8e0b1b16",
+      "bytes": 112605,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "original_ingesta_modificado": false
+    },
+    {
+      "id": "DRV01",
+      "titulo": "Video comercial de fundas (Reel 2, candidato Drive)",
+      "fuente": {
+        "tipo": "drive_candidato_no_confirmado_en_messenger",
+        "drive_file_id": "1lSuOW5DsZIYLWdhmxWzBPtmTtgoklUmC",
+        "nombre_original": "Reel 2 FINAL.mp4",
+        "carpeta": "Diferencia tapizado y fundas a medida",
+        "manifest": "docs/medios-f7/candidatos-drive.json",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_drive_candidatos/DRV01-comparacion-fundas-reel2.mp4",
+      "ruta_organizada": "recursos/f7-media/fundas/videos/DRV01-reel-fundas-drive-candidato.mp4",
+      "producto_observado": [
+        "fundas"
+      ],
+      "producto_asociado_por_carpeta": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "compartido_fundas_tipo_tapizado": true,
+      "base_uso_compartido": "Nombre de carpeta Drive: Diferencia tapizado y fundas a medida. Audio no transcripto.",
+      "contenido_observado": "Presentador con chomba F7 dentro de un Cronos, señalando funda negra/gris de costuras horizontales; subtítulos comerciales rojos y blancos. Hacia el final camina al lado del Cronos. Dura 34,27 s: no es el mismo archivo que MP01 de Messenger de 46,97 s.",
+      "confianza_visual": "alta para el objeto mostrado; relación con el envío actual de Messenger no confirmada",
+      "limites": "ID de Drive distinto del configurado e inaccesible. No se afirma que reemplace la referencia n8n ni que haya sido enviado por Messenger. Es un montaje distinto a MP01 y MP02; presenta a una persona dentro de un Cronos y dura 34,27 segundos.",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "b60aeabe8a06995158e46dff4ac7529587978c20afd2bdaf213b320bab9bf0f7",
+      "bytes": 71793816,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 2160,
+      "alto": 3840,
+      "codec": "hevc",
+      "duracion_segundos": 34.271995,
+      "pista_audio": true,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/DRV01.jpg"
+    },
+    {
+      "id": "DRV02",
+      "titulo": "Cubrevolante negro con costura roja (candidato Drive)",
+      "fuente": {
+        "tipo": "drive_candidato_no_confirmado_en_messenger",
+        "drive_file_id": "19_cxwbJ0pao9IYvq4xqiwiUvnoeikLl1",
+        "nombre_original": "1C507D51-372D-4271-A982-385A333E620B.MP4",
+        "carpeta": "Cubre  volante",
+        "manifest": "docs/medios-f7/candidatos-drive.json",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_drive_candidatos/DRV02-cubrevolante.mp4",
+      "ruta_organizada": "recursos/f7-media/cubrevolante/videos/DRV02-cubrevolante-drive-candidato.mp4",
+      "producto_observado": [
+        "cubrevolante"
+      ],
+      "producto_asociado_por_carpeta": [
+        "cubrevolante"
+      ],
+      "compartido_fundas_tipo_tapizado": false,
+      "base_uso_compartido": null,
+      "contenido_observado": "Volante Volkswagen en exhibidor de rejilla negro. Recubrimiento negro con secciones perforadas y costura roja en el borde interno.",
+      "confianza_visual": "alta para el objeto mostrado; relación con el envío actual de Messenger no confirmada",
+      "limites": "ID de Drive distinto del configurado e inaccesible. No se afirma que reemplace la referencia n8n ni que haya sido enviado por Messenger. ",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "bc7d87a417dd3abe89dcb92402418a470dc03d20b66ea6a3b7a845d4bd17ca53",
+      "bytes": 28876028,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 1080,
+      "alto": 1920,
+      "codec": "h264",
+      "duracion_segundos": 15.2,
+      "pista_audio": true,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/DRV02.jpg"
+    },
+    {
+      "id": "DRV03",
+      "titulo": "Presentación de alfombra (candidato Drive)",
+      "fuente": {
+        "tipo": "drive_candidato_no_confirmado_en_messenger",
+        "drive_file_id": "1sp2t49211rUojUjKboD6T0nrBR73qxBb",
+        "nombre_original": "e8cf672a-9fbd-4778-be6d-cfdd0372dfda.mov",
+        "carpeta": "Alfombras",
+        "manifest": "docs/medios-f7/candidatos-drive.json",
+        "verificado_en_messenger": false
+      },
+      "ruta_origen": "recursos/f7-media/_ingesta_drive_candidatos/DRV03-alfombra-presentacion.mov",
+      "ruta_organizada": "recursos/f7-media/alfombra/videos/DRV03-presentacion-alfombra-drive-candidato.mov",
+      "producto_observado": [
+        "alfombra"
+      ],
+      "producto_asociado_por_carpeta": [
+        "alfombra"
+      ],
+      "compartido_fundas_tipo_tapizado": false,
+      "base_uso_compartido": null,
+      "contenido_observado": "Una mano levanta/dobla una alfombra negra para mostrar espesor y reverso; fondo con piso ajedrezado negro/blanco, césped y borde azul.",
+      "confianza_visual": "alta para el objeto mostrado; relación con el envío actual de Messenger no confirmada",
+      "limites": "ID de Drive distinto del configurado e inaccesible. No se afirma que reemplace la referencia n8n ni que haya sido enviado por Messenger. ",
+      "fecha_revision": "2026-11-04",
+      "tipo": "video",
+      "sha256": "05fc39647ba5c5752d426fcba7d85cb9cb29b65ee84a8186c31301a84e3736d2",
+      "bytes": 6276468,
+      "integridad_copia": "SHA-256 coincide con ingesta",
+      "ancho": 720,
+      "alto": 1280,
+      "codec": "h264",
+      "duracion_segundos": 18.018333,
+      "pista_audio": false,
+      "original_ingesta_modificado": false,
+      "poster": "recursos/f7-media/_previews/posters/DRV03.jpg"
+    }
+  ],
+  "pendientes_n8n": [
+    {
+      "id": "N8N02",
+      "descripcion": "Video configurado de diferenciación",
+      "estado": "No recuperado por la cuenta Drive conectada (404).",
+      "limite": "MP01 tiene la función visual de comparar variantes, pero no se afirma que sea el mismo archivo ni el mismo montaje del Drive faltante."
+    },
+    {
+      "id": "N8N04",
+      "descripcion": "Video configurado de cubrevolante",
+      "estado": "No recuperado por la cuenta Drive conectada (404)."
+    },
+    {
+      "id": "N8N12",
+      "descripcion": "Video configurado de introducción de alfombra",
+      "estado": "No recuperado por la cuenta Drive conectada (404)."
+    }
+  ],
+  "resumen": {
+    "archivos": 20,
+    "messenger": 8,
+    "configurado_n8n": 9,
+    "drive_candidatos": 3,
+    "videos": 8,
+    "imagenes": 12,
+    "todas_las_copias_verificadas": true
+  },
+  "hallazgos_relevantes": [
+    {
+      "tema": "VIP",
+      "detalle": "La lámina Messenger MP06 difiere del archivo configurado N8N07. MP06 lleva MODELO VIP y tres fotografías. N8N07 es una foto sin título VIP, cuyo ejemplo también aparece en la lámina Diamante."
+    },
+    {
+      "tema": "Bastón",
+      "detalle": "La lámina Messenger MP05 difiere de N8N08. Presenta Bastón chico, grande y deportivo; N8N08 es una foto única sin título de modelo."
+    },
+    {
+      "tema": "Otras cuatro imágenes",
+      "detalle": "Colores, Hexagonal, Ultra y Diamante coinciden visualmente entre Messenger y configuración n8n. Sus archivos no son binariamente idénticos; Diamante Messenger está en WebP de menor resolución."
+    },
+    {
+      "tema": "Videos Messenger",
+      "detalle": "MP01 presenta primero fundas a medida y después tipo tapizado. MP02 presenta solo fundas a medida. Se preservan ambos montajes."
+    }
+  ]
+}

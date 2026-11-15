@@ -1,0 +1,355 @@
+{
+  "fecha": "2026-11-04",
+  "carpeta_destino": {
+    "id": "1YM8dcc_Dr6CcHpsoWVTyIXrjLAIqcJu9",
+    "url": "https://drive.google.com/drive/folders/1YM8dcc_Dr6CcHpsoWVTyIXrjLAIqcJu9",
+    "nombre": "F7 agente multimedia v1 - 2026-11-04",
+    "padre": "17z39976kWHtrgZbjoNRfRzM2vIoHRaDb"
+  },
+  "estado": "Diez piezas cargadas a la carpeta autorizada. Metadata remota de ID, nombre, MIME y tamaño coincide para10/10. No se cambiaron permisos ni originales.",
+  "archivos_para_cargar": [
+    {
+      "id": "MP01",
+      "ruta_local": "recursos/f7-media/fundas/videos/MP01-comparacion-fundas-y-tipo-tapizado-messenger.mp4",
+      "nombre_archivo": "MP01-comparacion-fundas-y-tipo-tapizado-messenger.mp4",
+      "mime": "video/mp4",
+      "bytes": 7339637,
+      "sha256": "8df4f93fa851bd7c58787fbb45bd595f7f176875466a45e8ebaa115f2a89df94",
+      "ancho": 576,
+      "alto": 1024,
+      "codec": "h264",
+      "duracion_segundos": 46.966667,
+      "pista_audio": true,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1WnDmUGY7EulWe5b-Kdc3NC-tvP_YZJRw",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "muestra adicional",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "botón Descargar de la pieza enviada por F7",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1WnDmUGY7EulWe5b-Kdc3NC-tvP_YZJRw/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP02",
+      "ruta_local": "recursos/f7-media/fundas/videos/MP02-presentacion-fundas-a-medida-messenger.mp4",
+      "nombre_archivo": "MP02-presentacion-fundas-a-medida-messenger.mp4",
+      "mime": "video/mp4",
+      "bytes": 4268880,
+      "sha256": "1c383aa1856c1a4487d42066053533538df1e588096009287376cefdbed5108a",
+      "ancho": 576,
+      "alto": 1024,
+      "codec": "h264",
+      "duracion_segundos": 28.166667,
+      "pista_audio": true,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1BBM7fXW6M6nXF7N0FXEDALvUrsOm8Gm6",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "pieza enviada por F7",
+        "verificado_en_messenger": true,
+        "contexto": "Tras elegir envío; texto acompañante: Este es el tipo de funda que podriamos confeccionar para tu vehiculo"
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1BBM7fXW6M6nXF7N0FXEDALvUrsOm8Gm6/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP04",
+      "ruta_local": "recursos/f7-media/fundas/colores/MP04-carta-colores-messenger.jpg",
+      "nombre_archivo": "MP04-carta-colores-messenger.jpg",
+      "mime": "image/jpeg",
+      "bytes": 132865,
+      "sha256": "a935e35846d516e23f33a8bdecad10b4061bcec16da6df633bdc4f6ed8bbaba7",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1MF_ng22PnTmIOQpAtRbR9kUU_vrH1Slx",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1MF_ng22PnTmIOQpAtRbR9kUU_vrH1Slx/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP05",
+      "ruta_local": "recursos/f7-media/fundas/disenos/MP05-modelo-baston-messenger.jpg",
+      "nombre_archivo": "MP05-modelo-baston-messenger.jpg",
+      "mime": "image/jpeg",
+      "bytes": 117830,
+      "sha256": "50eac2b9c85c7af0e842f571be0d3d61373d4cbab2d13a342037f1f88adf34e4",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1CDHXTRggMot8x-J3eWrOMzhLZSRD5aN9",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1CDHXTRggMot8x-J3eWrOMzhLZSRD5aN9/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP06",
+      "ruta_local": "recursos/f7-media/fundas/disenos/MP06-modelo-vip-messenger.jpg",
+      "nombre_archivo": "MP06-modelo-vip-messenger.jpg",
+      "mime": "image/jpeg",
+      "bytes": 102547,
+      "sha256": "d0a243dada61bbce809314e4df2874599d852675a2dc770c043a2449da8976eb",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1CjuOOD3f8D6MzOOAJV1uGtZAm3k2w4D9",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1CjuOOD3f8D6MzOOAJV1uGtZAm3k2w4D9/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP07",
+      "ruta_local": "recursos/f7-media/fundas/disenos/MP07-modelo-hexagonal-messenger.jpg",
+      "nombre_archivo": "MP07-modelo-hexagonal-messenger.jpg",
+      "mime": "image/jpeg",
+      "bytes": 126264,
+      "sha256": "31edb8ff36b932866a9be7615690a08f5ebedcf8d8a094a5a61be7fd0760a199",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1YjiDuYahWokCcZxxbL0Yv75iwdAPyzst",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1YjiDuYahWokCcZxxbL0Yv75iwdAPyzst/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "MP08",
+      "ruta_local": "recursos/f7-media/fundas/disenos/MP08-modelo-ultra-messenger.jpg",
+      "nombre_archivo": "MP08-modelo-ultra-messenger.jpg",
+      "mime": "image/jpeg",
+      "bytes": 112605,
+      "sha256": "7a9eab10353a4202e457c008ab6c40296d66db1b91ff042b16c58b7e8e0b1b16",
+      "ancho": 905,
+      "alto": 1280,
+      "codec": "mjpeg",
+      "duracion_segundos": null,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1YyXY0dynjiYEAjc4C5I9GxlNkNH50zLD",
+      "fuente": {
+        "tipo": "messenger",
+        "referencia_anonima": "M05",
+        "fecha_medio_revisado": "2026-11-03",
+        "descargado_desde": "imagen comercial enviada por F7; archivo JPG entregado por Messenger",
+        "verificado_en_messenger": true
+      },
+      "transformacion": "Copia exacta recuperada de Messenger, sin edición.",
+      "drive_url": "https://drive.google.com/file/d/1YyXY0dynjiYEAjc4C5I9GxlNkNH50zLD/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "TT01",
+      "ruta_local": "recursos/f7-media/_preparados_agente/TT01-tipo-tapizado-whatsapp.mp4",
+      "nombre_archivo": "TT01-tipo-tapizado-whatsapp.mp4",
+      "mime": "video/mp4",
+      "bytes": 6342565,
+      "sha256": "4625af16b9dec6998988cd418327222b4f4db6fc6036b7d58b65ed9aa3d4c194",
+      "ancho": 720,
+      "alto": 1280,
+      "codec": "h264",
+      "duracion_segundos": 27.2,
+      "pista_audio": true,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "17JK4DXnILanuTTk5_AFDDSPkUHLJlnlt",
+      "fuente": {
+        "tipo": "biblioteca_drive_f7",
+        "drive_file_id": "1Gzh76WKjkuycULj15aPHIC0m_-IAFlh7",
+        "carpeta_id": "1jHuYQKYxO7O98jzDUN7iopOJSvz4EvFF",
+        "nombre_original": "copy_71FB3923-43AA-4A9D-B2C5-B5043F4E9F61.mov",
+        "ruta_original": "recursos/f7-media/_preparados_agente/TT01-original.mov",
+        "sha256_original": "45448e7a706568ce807ab5216f63e40479f18cf1adaefff94bfa217b34ca2323",
+        "observacion_visual": "Manos ajustan la funda negra por el dorso cerrado y parte inferior del asiento; cierre y sujeción. Logo F7. Fuente en carpeta Tipo tapizado; no verificado como envío en Messenger."
+      },
+      "transformacion": "Conversión técnica completa a MP4 H.264 720p y AAC, sin recortes; original conservado.",
+      "drive_url": "https://drive.google.com/file/d/17JK4DXnILanuTTk5_AFDDSPkUHLJlnlt/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "CV01",
+      "ruta_local": "recursos/f7-media/_preparados_agente/CV01-cubrevolante-whatsapp.mp4",
+      "nombre_archivo": "CV01-cubrevolante-whatsapp.mp4",
+      "mime": "video/mp4",
+      "bytes": 5144144,
+      "sha256": "13aa05995810aa2a7963907dea8fd9ac3bbadd36b5861f26f08c3432ace5b09c",
+      "ancho": 720,
+      "alto": 1280,
+      "codec": "h264",
+      "duracion_segundos": 15.2,
+      "pista_audio": true,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "11Xn2TlRWQvXQUn6Ydpzz918MIPuoMgB9",
+      "fuente": {
+        "tipo": "drive_candidato_no_confirmado_en_messenger",
+        "drive_file_id": "19_cxwbJ0pao9IYvq4xqiwiUvnoeikLl1",
+        "nombre_original": "1C507D51-372D-4271-A982-385A333E620B.MP4",
+        "carpeta": "Cubre  volante",
+        "manifest": "docs/medios-f7/candidatos-drive.json",
+        "verificado_en_messenger": false
+      },
+      "transformacion": "Conversión técnica completa a MP4 H.264 720p y AAC, sin recortes; original conservado.",
+      "drive_url": "https://drive.google.com/file/d/11Xn2TlRWQvXQUn6Ydpzz918MIPuoMgB9/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    },
+    {
+      "id": "AL01",
+      "ruta_local": "recursos/f7-media/_preparados_agente/AL01-presentacion-alfombra-whatsapp.mp4",
+      "nombre_archivo": "AL01-presentacion-alfombra-whatsapp.mp4",
+      "mime": "video/mp4",
+      "bytes": 6276306,
+      "sha256": "c269ab7f7b9d8378747b5a13b1e28cbf49976caf027d0e392bd18ca7e45c9bfa",
+      "ancho": 720,
+      "alto": 1280,
+      "codec": "h264",
+      "duracion_segundos": 18.018333,
+      "pista_audio": false,
+      "estado_carga": "cargado_metadata_verificada",
+      "drive_file_id": "1dFZ2va7PZLOaE63EY5-IQQ9N5KgUqV6P",
+      "fuente": {
+        "tipo": "drive_candidato_no_confirmado_en_messenger",
+        "drive_file_id": "1sp2t49211rUojUjKboD6T0nrBR73qxBb",
+        "nombre_original": "e8cf672a-9fbd-4778-be6d-cfdd0372dfda.mov",
+        "carpeta": "Alfombras",
+        "manifest": "docs/medios-f7/candidatos-drive.json",
+        "verificado_en_messenger": false
+      },
+      "transformacion": "Remux de MOV H.264 a MP4 sin recodificar ni recortar, original conservado.",
+      "drive_url": "https://drive.google.com/file/d/1dFZ2va7PZLOaE63EY5-IQQ9N5KgUqV6P/view?usp=drivesdk",
+      "verificacion_remota": {
+        "id_nombre_mime_tamano": true,
+        "sha256_remoto_verificado": false,
+        "acceso_n8n_verificado": false
+      }
+    }
+  ],
+  "total_bytes": 29963643,
+  "reutilizados": [
+    {
+      "id": "N8N10",
+      "drive_file_id": "1JfFlXTxD7PZJUimiYk9Qq6-9Gwb255hH",
+      "ruta_local": "recursos/f7-media/fundas/disenos/N8N10-modelo-diamante-configurado.jpg",
+      "sha256": "ad480d549f1e0d997a3a1d9eaf3629f9473b5f4fe1eafb29b86f5b708758ff11",
+      "bytes": 99648
+    },
+    {
+      "id": "N8N01",
+      "drive_file_id": "1GGQ-YUMuux8s9AfSQSe5ep5OkrLHnOAp",
+      "ruta_local": "recursos/f7-media/alfombra/videos/N8N01-colocacion-alfombra-configurado.mp4",
+      "sha256": "22abb8d5707b189a303e03e735c18b374fe84f7e8599c39772a9634a6fae4340",
+      "bytes": 3091033
+    },
+    {
+      "id": "N8N05",
+      "drive_file_id": "1hHxM9VDz5xI2SFbWzDe1o2Kfj_eatOHx",
+      "ruta_local": "recursos/f7-media/fundas/videos/N8N05-recorrido-asientos-configurado.mp4",
+      "sha256": "c7b6a9926f2201836792150f42688a12e10c18af216bce665382861ee8b7375c",
+      "bytes": 4895496
+    },
+    {
+      "id": "N8N06",
+      "drive_file_id": "1rNsh1N5J68PFj16MeelLFHQLRfM13Ffg",
+      "ruta_local": "recursos/f7-media/fundas/videos/N8N06-respaldo-rebatible-configurado.mp4",
+      "sha256": "47ecbc7b83709aac43a884a164994262f4d165c9c871d73729aeca5c9eb7eef0",
+      "bytes": 1672164
+    }
+  ],
+  "limites": [
+    "Conector Drive y credential OAuth de n8n son accesos diferentes: no se verificó aún la descarga desde n8n.",
+    "Los videos TT01/CV01/AL01 provienen de biblioteca comercial F7, sin envío observado en Messenger.",
+    "La lámina Diamante operativa es el JPG de mayor resolución N8N10, visualmente coincidente con MP03 WebP; no se afirma identidad binaria.",
+    "Se conserva la duración íntegra y pista de audio si existía; el audio no fue transcripto ni validado comercialmente."
+  ],
+  "autorizacion": {
+    "fecha": "2026-11-04",
+    "texto_usuario": "Sí, autorizo subir esas 10 piezas a esa carpeta",
+    "destino_carpeta_id": "1YM8dcc_Dr6CcHpsoWVTyIXrjLAIqcJu9",
+    "alcance": "Las10piezas del manifiesto,29.963.643bytes; carga a carpeta señalada, sin cambios de permisos."
+  },
+  "rechazo_previo": {
+    "accion": "upload_file de MP01",
+    "resultado": "Rechazado por auto-review por faltar autorización explícita para ese destino. No se reintentó hasta recibir autorización de Mateo.",
+    "resuelto_con_autorizacion": true
+  }
+}

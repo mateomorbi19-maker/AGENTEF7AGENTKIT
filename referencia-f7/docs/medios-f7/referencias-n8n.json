@@ -1,0 +1,349 @@
+{
+  "fecha_relevamiento": "2026-11-03",
+  "fuente_workflow": {
+    "id": "2J6b3QjDiDxFKYC4",
+    "nombre": "Herramienta fotos",
+    "activeVersionId": "28f18e85-4f48-425a-b7b7-2b5d0e75bca7",
+    "updatedAt": "2026-06-11T12:50:14.001Z",
+    "versionCreatedAt": "2026-06-11T12:50:14.008Z",
+    "versionName": "Version 28f18e85",
+    "coinciden_nodos_medios": true
+  },
+  "alcance": "Nodos de medios del workflow vivo y versión publicada; solo lectura. Herramienta precios no presenta nodos de descarga Google Drive en su estructura. No se ejecutaron workflows ni se enviaron mensajes.",
+  "criterio_clasificacion": "La asociación de producto y etapa surge de nombres, ramas y referencias del workflow. No certifica uso actual en Messenger ni disponibilidad de los productos.",
+  "resumen": {
+    "archivos_unicos": 12,
+    "videos": 6,
+    "imagenes": 6,
+    "descargados": 9,
+    "pendientes": 3
+  },
+  "archivos": [
+    {
+      "id": "N8N01",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1GGQ-YUMuux8s9AfSQSe5ep5OkrLHnOAp",
+      "fuente_url": "https://drive.google.com/file/d/1GGQ-YUMuux8s9AfSQSe5ep5OkrLHnOAp/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "alfombra"
+      ],
+      "uso_configurado": "Video de demostración posterior al video de introducción",
+      "tipo": "video",
+      "nombre_original": "d32ce828-90bb-4fd4-a62b-440c86cd1e52.MP4",
+      "nodos_fuente": [
+        "Drive Descargar Video Alfombra"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/alfombra_video_demostracion.mp4",
+      "mime": "video/mp4",
+      "bytes": 3091033,
+      "sha256": "22abb8d5707b189a303e03e735c18b374fe84f7e8599c39772a9634a6fae4340",
+      "ancho": 480,
+      "alto": 848,
+      "duracion_segundos": 17.066667,
+      "pista_audio": false,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N02",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "192WIGfNlImwC6WU_6tNmN9F7c0uvaEnG",
+      "fuente_url": "https://drive.google.com/file/d/192WIGfNlImwC6WU_6tNmN9F7c0uvaEnG/view",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diferenciación entre variantes",
+      "tipo": "video",
+      "nombre_original": null,
+      "nodos_fuente": [
+        "Drive Descargar Video Diferenciacion"
+      ],
+      "estado_recuperacion": "no_disponible_para_cuenta_conectada",
+      "ruta_local": null,
+      "mime": null,
+      "bytes": null,
+      "sha256": null,
+      "ancho": null,
+      "alto": null,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Google Drive devolvió 404 para esta referencia con la cuenta conectada. No se puede concluir si fue borrado o falta acceso."
+    },
+    {
+      "id": "N8N03",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1Gj8nftQOonYmzGW_TnPuZyDA9SF--RUk",
+      "fuente_url": "https://drive.google.com/file/d/1Gj8nftQOonYmzGW_TnPuZyDA9SF--RUk/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Carta de colores; reutilizada en catálogo y rutas de diseños discretos/personalizados",
+      "tipo": "imagen",
+      "nombre_original": "Colores.jpg",
+      "nodos_fuente": [
+        "Drive Descargar Imagen Colores",
+        "TT Drive Imagen Colores",
+        "Pers Preparar Imagenes",
+        "Disc Drive Img 3"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/colores.jpg",
+      "mime": "image/jpeg",
+      "bytes": 117479,
+      "sha256": "e1b7d18b78672c3823e20524696d49bae7048d773cd4e68f0aabd44ccf2ac9ca",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N04",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1NTU8i1fujW31eSDruDaxCjNMVhzpDLFe",
+      "fuente_url": "https://drive.google.com/file/d/1NTU8i1fujW31eSDruDaxCjNMVhzpDLFe/view",
+      "producto_asociado_por_configuracion": [
+        "cubrevolante"
+      ],
+      "uso_configurado": "Video comercial de cubrevolante",
+      "tipo": "video",
+      "nombre_original": "cubrevolantes_video.mp4",
+      "nodos_fuente": [
+        "Drive Descargar Video Cubrevolante"
+      ],
+      "estado_recuperacion": "no_disponible_para_cuenta_conectada",
+      "ruta_local": null,
+      "mime": null,
+      "bytes": null,
+      "sha256": null,
+      "ancho": null,
+      "alto": null,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Google Drive devolvió 404 para esta referencia con la cuenta conectada. No se puede concluir si fue borrado o falta acceso."
+    },
+    {
+      "id": "N8N05",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1hHxM9VDz5xI2SFbWzDe1o2Kfj_eatOHx",
+      "fuente_url": "https://drive.google.com/file/d/1hHxM9VDz5xI2SFbWzDe1o2Kfj_eatOHx/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Primer video de la rama video_calidad",
+      "tipo": "video",
+      "nombre_original": "video_calidad_2.mp4",
+      "nodos_fuente": [
+        "Drive Video Calidad 1"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/video_calidad_2.mp4",
+      "mime": "video/mp4",
+      "bytes": 4895496,
+      "sha256": "c7b6a9926f2201836792150f42688a12e10c18af216bce665382861ee8b7375c",
+      "ancho": 464,
+      "alto": 832,
+      "duracion_segundos": 33.446667,
+      "pista_audio": false,
+      "verificado_en_messenger": false,
+      "nota": "El nodo Drive Video Calidad 1 descarga el archivo llamado video_calidad_2.mp4; se conserva el nombre del archivo original."
+    },
+    {
+      "id": "N8N06",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1rNsh1N5J68PFj16MeelLFHQLRfM13Ffg",
+      "fuente_url": "https://drive.google.com/file/d/1rNsh1N5J68PFj16MeelLFHQLRfM13Ffg/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Segundo video de la rama video_calidad",
+      "tipo": "video",
+      "nombre_original": "video_calidad_1.mp4",
+      "nodos_fuente": [
+        "Drive Video Calidad 2"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/video_calidad_1.mp4",
+      "mime": "video/mp4",
+      "bytes": 1672164,
+      "sha256": "47ecbc7b83709aac43a884a164994262f4d165c9c871d73729aeca5c9eb7eef0",
+      "ancho": 464,
+      "alto": 832,
+      "duracion_segundos": 11.505,
+      "pista_audio": false,
+      "verificado_en_messenger": false,
+      "nota": "El nodo Drive Video Calidad 2 descarga el archivo llamado video_calidad_1.mp4; se conserva el nombre del archivo original."
+    },
+    {
+      "id": "N8N07",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1w2MsShNgg4UqEIa0o1w-H7kyAlg6pqiM",
+      "fuente_url": "https://drive.google.com/file/d/1w2MsShNgg4UqEIa0o1w-H7kyAlg6pqiM/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diseño VIP; ramas discreto y personalizado",
+      "tipo": "imagen",
+      "nombre_original": "VIP.jpg",
+      "nodos_fuente": [
+        "Disc Drive Img 1",
+        "Pers Preparar Imagenes"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/diseno_vip.jpg",
+      "mime": "image/jpeg",
+      "bytes": 111444,
+      "sha256": "1cc519b3805d6debc0c2d8100ec0771e6b6a21b4354e40ad033f21bc109c459e",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N08",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1gba1nUULpkc8ShWyteUkGYFpF4DQa8Qg",
+      "fuente_url": "https://drive.google.com/file/d/1gba1nUULpkc8ShWyteUkGYFpF4DQa8Qg/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diseño Baston; ramas discreto y personalizado",
+      "tipo": "imagen",
+      "nombre_original": "Baston.jpg",
+      "nodos_fuente": [
+        "Disc Drive Img 2",
+        "Pers Preparar Imagenes"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/diseno_baston.jpg",
+      "mime": "image/jpeg",
+      "bytes": 182692,
+      "sha256": "64af53407461cbfc6809cd7a965054098597766e9ea0aa17257f2c95a9efd226",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N09",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "17gjUTzNMKA7F5uc9ExBqBRQVuwo5xq5i",
+      "fuente_url": "https://drive.google.com/file/d/17gjUTzNMKA7F5uc9ExBqBRQVuwo5xq5i/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diseño hexagonal; rama personalizado",
+      "tipo": "imagen",
+      "nombre_original": "Modelo hexagonal.jpg",
+      "nodos_fuente": [
+        "Pers Preparar Imagenes"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/diseno_hexagonal.jpg",
+      "mime": "image/jpeg",
+      "bytes": 119522,
+      "sha256": "7c2227b3cd91305437c34ce237d66a9f3c90169178d03cd7fb63574aa34a2987",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N10",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1JfFlXTxD7PZJUimiYk9Qq6-9Gwb255hH",
+      "fuente_url": "https://drive.google.com/file/d/1JfFlXTxD7PZJUimiYk9Qq6-9Gwb255hH/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diseño diamante; rama personalizado",
+      "tipo": "imagen",
+      "nombre_original": "Modelo diamante.jpg",
+      "nodos_fuente": [
+        "Pers Preparar Imagenes"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/diseno_diamante.jpg",
+      "mime": "image/jpeg",
+      "bytes": 99648,
+      "sha256": "ad480d549f1e0d997a3a1d9eaf3629f9473b5f4fe1eafb29b86f5b708758ff11",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N11",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1WlUlJpKXfPTj4RgbmytEw60q-iFDPjUI",
+      "fuente_url": "https://drive.google.com/file/d/1WlUlJpKXfPTj4RgbmytEw60q-iFDPjUI/view?usp=drivesdk",
+      "producto_asociado_por_configuracion": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "uso_configurado": "Diseño ultra; rama personalizado",
+      "tipo": "imagen",
+      "nombre_original": "Modelo ultra.jpg",
+      "nodos_fuente": [
+        "Pers Preparar Imagenes"
+      ],
+      "estado_recuperacion": "descargado",
+      "ruta_local": "recursos/f7-media/_ingesta_n8n/diseno_ultra.jpg",
+      "mime": "image/jpeg",
+      "bytes": 105285,
+      "sha256": "bfde1681a316918202af741bd4492b31ba6fd555f43b84936e2a354d40f55c30",
+      "ancho": 905,
+      "alto": 1280,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Descargado íntegro desde el conector Google Drive, tamaño comparado con metadata; formato y dimensiones verificados con ffprobe. Contenido comercial no inspeccionado visualmente en esta tarea."
+    },
+    {
+      "id": "N8N12",
+      "estado_evidencia": "configurado_n8n",
+      "drive_file_id": "1Anu4zbJw8tcnkXv7fGcWWcyfXD4QvDeq",
+      "fuente_url": "https://drive.google.com/file/d/1Anu4zbJw8tcnkXv7fGcWWcyfXD4QvDeq/view",
+      "producto_asociado_por_configuracion": [
+        "alfombra"
+      ],
+      "uso_configurado": "Video de introducción previo a demostración",
+      "tipo": "video",
+      "nombre_original": null,
+      "nodos_fuente": [
+        "Alf Drive Video Intro"
+      ],
+      "estado_recuperacion": "no_disponible_para_cuenta_conectada",
+      "ruta_local": null,
+      "mime": null,
+      "bytes": null,
+      "sha256": null,
+      "ancho": null,
+      "alto": null,
+      "duracion_segundos": null,
+      "pista_audio": null,
+      "verificado_en_messenger": false,
+      "nota": "Google Drive devolvió 404 para esta referencia con la cuenta conectada. No se puede concluir si fue borrado o falta acceso."
+    }
+  ]
+}
