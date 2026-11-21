@@ -1,0 +1,575 @@
+{
+  "version": "2026-11-04.1",
+  "descripcion": "Selección operativa de medios F7; el envío no implica disponibilidad para un vehículo. Las láminas genéricas se comparten por rutas de configuración. Los archivos pendientes de carga permanecen deshabilitados.",
+  "assets": [
+    {
+      "id": "MP01",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "fundas",
+        "tipo tapizado"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1WnDmUGY7EulWe5b-Kdc3NC-tvP_YZJRw"
+      },
+      "orden": 10,
+      "titulo": "Comparación de fundas y tipo tapizado",
+      "nombre_archivo": "MP01-comparacion-fundas-y-tipo-tapizado-messenger.mp4",
+      "mime": "video/mp4",
+      "sha256": "8df4f93fa851bd7c58787fbb45bd595f7f176875466a45e8ebaa115f2a89df94",
+      "bytes": 7339637
+    },
+    {
+      "id": "MP02",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "fundas"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1BBM7fXW6M6nXF7N0FXEDALvUrsOm8Gm6"
+      },
+      "orden": 20,
+      "titulo": "Presentación de fundas a medida",
+      "nombre_archivo": "MP02-presentacion-fundas-a-medida-messenger.mp4",
+      "mime": "video/mp4",
+      "sha256": "1c383aa1856c1a4487d42066053533538df1e588096009287376cefdbed5108a",
+      "bytes": 4268880
+    },
+    {
+      "id": "MP04",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1MF_ng22PnTmIOQpAtRbR9kUU_vrH1Slx"
+      },
+      "orden": 40,
+      "titulo": "Carta de colores, costuras, vivos y logos",
+      "nombre_archivo": "MP04-carta-colores-messenger.jpg",
+      "mime": "image/jpeg",
+      "sha256": "a935e35846d516e23f33a8bdecad10b4061bcec16da6df633bdc4f6ed8bbaba7",
+      "bytes": 132865
+    },
+    {
+      "id": "MP05",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1CDHXTRggMot8x-J3eWrOMzhLZSRD5aN9"
+      },
+      "orden": 51,
+      "titulo": "Diseño Bastón",
+      "nombre_archivo": "MP05-modelo-baston-messenger.jpg",
+      "mime": "image/jpeg",
+      "sha256": "50eac2b9c85c7af0e842f571be0d3d61373d4cbab2d13a342037f1f88adf34e4",
+      "bytes": 117830
+    },
+    {
+      "id": "MP06",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1CjuOOD3f8D6MzOOAJV1uGtZAm3k2w4D9"
+      },
+      "orden": 52,
+      "titulo": "Diseño VIP",
+      "nombre_archivo": "MP06-modelo-vip-messenger.jpg",
+      "mime": "image/jpeg",
+      "sha256": "d0a243dada61bbce809314e4df2874599d852675a2dc770c043a2449da8976eb",
+      "bytes": 102547
+    },
+    {
+      "id": "MP07",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1YjiDuYahWokCcZxxbL0Yv75iwdAPyzst"
+      },
+      "orden": 53,
+      "titulo": "Diseño Hexagonal",
+      "nombre_archivo": "MP07-modelo-hexagonal-messenger.jpg",
+      "mime": "image/jpeg",
+      "sha256": "31edb8ff36b932866a9be7615690a08f5ebedcf8d8a094a5a61be7fd0760a199",
+      "bytes": 126264
+    },
+    {
+      "id": "MP08",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1YyXY0dynjiYEAjc4C5I9GxlNkNH50zLD"
+      },
+      "orden": 55,
+      "titulo": "Diseño Ultra",
+      "nombre_archivo": "MP08-modelo-ultra-messenger.jpg",
+      "mime": "image/jpeg",
+      "sha256": "7a9eab10353a4202e457c008ab6c40296d66db1b91ff042b16c58b7e8e0b1b16",
+      "bytes": 112605
+    },
+    {
+      "id": "TT01",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "tipo tapizado"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "17JK4DXnILanuTTk5_AFDDSPkUHLJlnlt"
+      },
+      "orden": 30,
+      "titulo": "Colocación y detalle de tipo tapizado",
+      "nombre_archivo": "TT01-tipo-tapizado-whatsapp.mp4",
+      "mime": "video/mp4",
+      "sha256": "4625af16b9dec6998988cd418327222b4f4db6fc6036b7d58b65ed9aa3d4c194",
+      "bytes": 6342565
+    },
+    {
+      "id": "CV01",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "cubrevolante"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "11Xn2TlRWQvXQUn6Ydpzz918MIPuoMgB9"
+      },
+      "orden": 80,
+      "titulo": "Presentación de cubrevolante",
+      "nombre_archivo": "CV01-cubrevolante-whatsapp.mp4",
+      "mime": "video/mp4",
+      "sha256": "13aa05995810aa2a7963907dea8fd9ac3bbadd36b5861f26f08c3432ace5b09c",
+      "bytes": 5144144
+    },
+    {
+      "id": "AL01",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "alfombra"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1dFZ2va7PZLOaE63EY5-IQQ9N5KgUqV6P"
+      },
+      "orden": 70,
+      "titulo": "Presentación de alfombra",
+      "nombre_archivo": "AL01-presentacion-alfombra-whatsapp.mp4",
+      "mime": "video/mp4",
+      "sha256": "c269ab7f7b9d8378747b5a13b1e28cbf49976caf027d0e392bd18ca7e45c9bfa",
+      "bytes": 6276306
+    },
+    {
+      "id": "N8N10",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [],
+      "formato": "foto",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1JfFlXTxD7PZJUimiYk9Qq6-9Gwb255hH"
+      },
+      "orden": 54,
+      "titulo": "Diseño Diamante",
+      "nombre_archivo": "N8N10-modelo-diamante-configurado.jpg",
+      "mime": "image/jpeg",
+      "sha256": "ad480d549f1e0d997a3a1d9eaf3629f9473b5f4fe1eafb29b86f5b708758ff11",
+      "bytes": 99648
+    },
+    {
+      "id": "N8N01",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "alfombra"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1GGQ-YUMuux8s9AfSQSe5ep5OkrLHnOAp"
+      },
+      "orden": 71,
+      "titulo": "Colocación de alfombra",
+      "nombre_archivo": "N8N01-colocacion-alfombra-configurado.mp4",
+      "mime": "video/mp4",
+      "sha256": "22abb8d5707b189a303e03e735c18b374fe84f7e8599c39772a9634a6fae4340",
+      "bytes": 3091033
+    },
+    {
+      "id": "N8N05",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "fundas"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1hHxM9VDz5xI2SFbWzDe1o2Kfj_eatOHx"
+      },
+      "orden": 60,
+      "titulo": "Recorrido y detalle de fundas",
+      "nombre_archivo": "N8N05-recorrido-asientos-configurado.mp4",
+      "mime": "video/mp4",
+      "sha256": "c7b6a9926f2201836792150f42688a12e10c18af216bce665382861ee8b7375c",
+      "bytes": 4895496
+    },
+    {
+      "id": "N8N06",
+      "version": "2026-11-04.1",
+      "habilitado": true,
+      "productos_visibles": [
+        "fundas"
+      ],
+      "formato": "video",
+      "fuente": {
+        "tipo": "drive",
+        "id": "1rNsh1N5J68PFj16MeelLFHQLRfM13Ffg"
+      },
+      "orden": 61,
+      "titulo": "Respaldo rebatible con fundas",
+      "nombre_archivo": "N8N06-respaldo-rebatible-configurado.mp4",
+      "mime": "video/mp4",
+      "sha256": "47ecbc7b83709aac43a884a164994262f4d165c9c871d73729aeca5c9eb7eef0",
+      "bytes": 1672164
+    }
+  ],
+  "rutas": [
+    {
+      "producto": "fundas",
+      "contenido": "presentacion",
+      "opciones": [
+        {
+          "id": "comparativo",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP01"
+          ]
+        },
+        {
+          "id": "exclusivo-fundas",
+          "prioridad": 2,
+          "asset_ids": [
+            "MP02"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "presentacion",
+      "opciones": [
+        {
+          "id": "comparativo",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP01"
+          ]
+        },
+        {
+          "id": "exclusivo-tipo-tapizado",
+          "prioridad": 2,
+          "asset_ids": [
+            "TT01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "alfombra",
+      "contenido": "presentacion",
+      "opciones": [
+        {
+          "id": "intro-y-colocacion",
+          "prioridad": 1,
+          "asset_ids": [
+            "AL01",
+            "N8N01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "cubrevolante",
+      "contenido": "presentacion",
+      "opciones": [
+        {
+          "id": "cubrevolante",
+          "prioridad": 1,
+          "asset_ids": [
+            "CV01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "comparacion",
+      "opciones": [
+        {
+          "id": "comparativo",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "colores",
+      "opciones": [
+        {
+          "id": "carta-colores",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP04"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "disenos",
+      "diseno": "baston",
+      "opciones": [
+        {
+          "id": "baston",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP05"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "disenos",
+      "diseno": "vip",
+      "opciones": [
+        {
+          "id": "vip",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP06"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "disenos",
+      "diseno": "hexagonal",
+      "opciones": [
+        {
+          "id": "hexagonal",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP07"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "disenos",
+      "diseno": "diamante",
+      "opciones": [
+        {
+          "id": "diamante",
+          "prioridad": 1,
+          "asset_ids": [
+            "N8N10"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "disenos",
+      "diseno": "ultra",
+      "opciones": [
+        {
+          "id": "ultra",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP08"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "comparacion",
+      "opciones": [
+        {
+          "id": "comparativo",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "colores",
+      "opciones": [
+        {
+          "id": "carta-colores",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP04"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "disenos",
+      "diseno": "baston",
+      "opciones": [
+        {
+          "id": "baston",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP05"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "disenos",
+      "diseno": "vip",
+      "opciones": [
+        {
+          "id": "vip",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP06"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "disenos",
+      "diseno": "hexagonal",
+      "opciones": [
+        {
+          "id": "hexagonal",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP07"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "disenos",
+      "diseno": "diamante",
+      "opciones": [
+        {
+          "id": "diamante",
+          "prioridad": 1,
+          "asset_ids": [
+            "N8N10"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "disenos",
+      "diseno": "ultra",
+      "opciones": [
+        {
+          "id": "ultra",
+          "prioridad": 1,
+          "asset_ids": [
+            "MP08"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "fundas",
+      "contenido": "calidad",
+      "opciones": [
+        {
+          "id": "detalle-fundas",
+          "prioridad": 1,
+          "asset_ids": [
+            "N8N05",
+            "N8N06"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "tipo tapizado",
+      "contenido": "calidad",
+      "opciones": [
+        {
+          "id": "detalle-tipo-tapizado",
+          "prioridad": 1,
+          "asset_ids": [
+            "TT01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "alfombra",
+      "contenido": "calidad",
+      "opciones": [
+        {
+          "id": "colocacion",
+          "prioridad": 1,
+          "asset_ids": [
+            "N8N01"
+          ]
+        }
+      ]
+    },
+    {
+      "producto": "cubrevolante",
+      "contenido": "calidad",
+      "opciones": [
+        {
+          "id": "detalle-cubrevolante",
+          "prioridad": 1,
+          "asset_ids": [
+            "CV01"
+          ]
+        }
+      ]
+    }
+  ]
+}

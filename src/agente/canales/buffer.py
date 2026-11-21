@@ -138,6 +138,18 @@ class BufferDeMensajes:
         """Cuántos mensajes hay esperando. Lo usan los tests y el /salud."""
         return len(self._pendientes.get(conversacion, []))
 
+    def descartar(self, conversacion: str) -> int:
+        """Tira lo que esa conversación tenía juntado, sin contestarlo. Devuelve cuántos eran.
+
+        Lo usa el agente de F7 cuando llega «borrar»: lo que la persona había
+        escrito antes ya no se contesta.
+        """
+        reloj = self._relojes.pop(conversacion, None)
+        if reloj is not None:
+            reloj.cancel()
+        self._arrancó_en.pop(conversacion, None)
+        return len(self._pendientes.pop(conversacion, []))
+
     async def vaciar(self) -> None:
         """Suelta todo lo que esté esperando. Se llama al apagar el servidor.
 

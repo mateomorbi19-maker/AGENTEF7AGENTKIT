@@ -33,7 +33,7 @@ Investigado el 15/11/2026 sobre la documentación oficial de Easypanel. Al final
 | 8 | App → **Advanced → Deploy** | **Replicas = 1, obligatorio.** El kit guarda en memoria los mensajes que está juntando y los que ya contestó: con dos copias corriendo, contesta doble o mal. |
 | 9 | App → **Resources** | Dejale memoria al build: corre en el mismo servidor que n8n y Chatwoot. Un límite muy bajo corta la construcción. |
 | 10 | App → **Overview → Deploy** | Si falla al construir, el error está en **Deployments**. Si arranca y después se cae, el error está en **Logs**. |
-| 11 | Navegador | Abrí `https://agente-f7.teotec.org/salud`. Tiene que mostrar `"estado": "ok"`, `"modelo": "claude-sonnet-5"` y `"memoria": "postgres"`. Si dice `sqlite`, falta `MODO=produccion`. |
+| 11 | Navegador | Abrí `https://agente-f7.teotec.org/salud`. Tiene que mostrar `"estado": "ok"`, `"modelo": "claude-sonnet-5"`, `"memoria": "postgres"`, `"agente": "f7"`, `"bandeja": "1"`, `"planilla": "ok"` y `"fotos_y_videos": 14`. Si dice `sqlite`, falta `MODO=produccion`. Si en vez de eso el servicio no arranca, mirá **Logs**: dice qué falta (por ejemplo `AGENTE=f7`, la base o una foto del catálogo). Si `planilla` dice `error`, el servidor no pudo leer la planilla de precios y el agente no va a poder cotizar. |
 | 12 | Overview → **Enable Auto Deploy** (opcional) | Cada vez que se sube un cambio a GitHub, se despliega solo. |
 
 ### Las variables (paso 6)
@@ -41,6 +41,7 @@ Investigado el 15/11/2026 sobre la documentación oficial de Easypanel. Al final
 Copiá los valores secretos de tu `.env`. No los pegues en ningún chat.
 
 ```
+AGENTE=f7
 PROVEEDOR=claude
 ANTHROPIC_API_KEY=<la clave de Claude>
 MODELO_CLAUDE=claude-sonnet-5
@@ -53,7 +54,8 @@ MEMORIA_MENSAJES=30
 PROMPT_SISTEMA=prompts/sistema.md
 CHATWOOT_URL=https://chatwoot.teotec.org
 CHATWOOT_TOKEN=<token de un usuario de la cuenta que atiende>
-CHATWOOT_CUENTA_ID=<la cuenta de PRUEBAS mientras n8n atienda la 1>
+CHATWOOT_CUENTA_ID=1
+CHATWOOT_BANDEJA_ID=1
 CHATWOOT_WEBHOOK_TOKEN=<el mismo de tu .env>
 CHATWOOT_ETIQUETA_HUMANO=humano
 BUFFER_SEGUNDOS=15
@@ -66,15 +68,21 @@ DESCRIBIR_IMAGENES=0
 TRANSCRIBIR_AUDIOS=1
 ```
 
+- **`AGENTE=f7` no puede faltar.** Sin esa línea el servidor no arranca: es a propósito, para que nunca atienda a los clientes el agente genérico del kit.
+- **`CHATWOOT_BANDEJA_ID=1`** es la bandeja del WhatsApp de F7. La cuenta 1 tiene otra (la 3, «Test Bot API») y ahí el agente no contesta. Si algún día se prueba en otra cuenta, va el número de esa bandeja.
+- **`CHATWOOT_CUENTA_ID=1` no hace que el agente conteste nada por sí solo.** Empieza a atender recién cuando Chatwoot le avisa (ver «El cambio»).
+- **`OPENAI_API_KEY` es solo para los audios.** Si no se carga, cuando un cliente manda un audio la charla pasa a Candela (queda con «humano» y asignada a ella) sin contestarle nada.
 - **`MODELO_CLAUDE` no puede faltar.** Si falta, el kit usa el modelo más caro de Claude sin avisar.
 - **`PUERTO` no hace falta**, porque el Dockerfile ya usa el 8000.
 - **Las de Gmail y Telegram quedan afuera:** los mails de aviso todavía no se decidieron y Telegram no se usa.
 
 ## Probarlo sin tocar a los clientes (etapa 4)
 
-**Regla de oro: mientras n8n atienda la cuenta 1 de Chatwoot, el agente nuevo NO se conecta a la cuenta 1.** Si se conectan los dos, contestan los dos. Además, el kit tal como viene contesta en **todas** las bandejas de la cuenta a la que se conecta. Que atienda solo la bandeja 1 se agrega en la etapa 2.
+**Este paso es opcional.** Sirve si se quiere probar en el servidor antes de tocar la línea real. Si la línea todavía no atiende clientes con el agente, se puede ir directo a «El cambio».
 
-**Ojo con la cuenta 1:** hoy la lógica de F7 tiene la cuenta 1 escrita en el código y en sus tablas (mapa, duda Q9). Al pasarla al kit en las etapas 2 y 3, la cuenta se va a tomar de `CHATWOOT_CUENTA_ID`. Si no, esta prueba en una cuenta aparte no funcionaría.
+**Regla de oro: Chatwoot le avisa a un solo agente por vez.** Si en la cuenta 1 quedan activos el webhook de n8n y el del agente nuevo, contestan los dos.
+
+**En una cuenta de pruebas cambian tres cosas:** `CHATWOOT_CUENTA_ID` (el número de esa cuenta), `CHATWOOT_BANDEJA_ID` (el número de su bandeja, o vacío para todas) y el pase a Candela, que no se va a confirmar porque el usuario 3 no existe ahí (el agente igual queda pausado con «humano»).
 
 1. En Chatwoot, creá una **cuenta de pruebas**. Se hace desde la consola de super admin: `https://chatwoot.teotec.org/super_admin` → Accounts.
 2. Adentro, creá una bandeja de prueba: canal API, o un número de WhatsApp de prueba si tenés uno.
@@ -85,12 +93,17 @@ TRANSCRIBIR_AUDIOS=1
 
 ## El cambio (etapa 5): lo hacés vos, cuando lo apruebes
 
-1. Antes del cambio, el agente nuevo tiene que filtrar la bandeja 1 (se hace en la etapa 2) y tienen que estar decididas las conversaciones en curso (ver `docs/MAPA_MIGRACION.md`).
-2. En Easypanel, poné `CHATWOOT_CUENTA_ID=1` (con el token de un usuario de la cuenta 1) y hacé **Deploy**.
-3. En la cuenta 1 de Chatwoot, desactivá el webhook de n8n y agregá el del agente nuevo (evento **Mensaje creado**).
-4. En n8n, **desactivá** el flujo principal. **No lo borres.**
+1. Antes del cambio, `/salud` tiene que mostrar todo lo del paso 11. El agente nuevo arranca sin historial: no conoce lo que se habló con el de n8n (cada conversación empieza con el saludo).
+2. En la cuenta 1 de Chatwoot, andá a **Configuración → Integraciones → Webhooks** y **editá el webhook que hoy apunta a n8n** (no agregues otro al lado):
+   - URL: `https://agente-f7.teotec.org/chatwoot/<CHATWOOT_WEBHOOK_TOKEN>` (con tu dominio y tu token).
+   - Evento: **Mensaje creado** (solamente).
+   Antes de guardar, copiá la URL vieja de n8n en un lugar seguro: es la que hace falta para volver atrás.
+3. En n8n, **desactivá** el flujo principal. **No lo borres.**
+4. Desde tu WhatsApp, escribile a la línea: primero `borrar` (tiene que contestar «Ya borre mi memoria…») y después una consulta común.
 
-**Para volver atrás:** sacá el webhook del agente nuevo, volvé a activar el de n8n y reactivá el flujo principal. Es un minuto.
+**Para volver atrás:** poné de nuevo la URL de n8n en ese webhook y reactivá el flujo principal. Es un minuto.
+
+**Si el agente no contesta:** mirá **Logs** del App en Easypanel. Cada mensaje que entra deja una línea con el número de conversación, y si algo falla deja el error. Cuando algo falla, el cliente no ve el error: la conversación queda con la etiqueta «humano» y asignada a Candela. Para devolvérsela al agente, sacale la etiqueta o escribí `borrar` desde ese chat.
 
 ## Cuidados
 

@@ -43,6 +43,9 @@ RUN pip install --no-cache-dir -r requirements-produccion.txt
 
 COPY src/ ./src/
 COPY prompts/ ./prompts/
+# Las fotos y los videos que manda el agente de F7 (14 archivos, 40 MB). Viajan
+# adentro de la imagen para no depender de Google Drive en cada envío.
+COPY recursos/ ./recursos/
 COPY webhook_chatwoot.py bot_telegram.py probar_mail.py ./
 
 # Sin esto corre como root sin necesidad. Y el usuario es dueño solo de

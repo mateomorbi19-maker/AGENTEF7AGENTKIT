@@ -52,7 +52,7 @@ from ..avisos import Avisos
 from ..canales.adjuntos import DescriptorDeFotos, Lector, TranscriptorOpenAI
 from ..canales.base import MensajeEntrante
 from ..canales.buffer import BufferDeMensajes
-from ..canales.chatwoot import Chatwoot, tarda_en_escribir
+from ..canales.chatwoot import Chatwoot, ErrorDeChatwoot, tarda_en_escribir
 from ..canales.whatsapp_meta import marcar_visto_y_escribiendo, wamid_del_evento
 from ..config import Config, ErrorDeConfiguracion
 from ..frenos import BLOQUEAR, IGNORAR, TopeDeMensajes
@@ -211,12 +211,18 @@ def crear_app(
     avisos: Avisos | None = None,
     tope: TopeDeMensajes | None = None,
     lector: Lector | None = None,
+    f7=None,
 ) -> FastAPI:
     """Arma el servidor.
 
     El agente, el canal, los avisos y el lector se pueden pasar armados: es
     lo que hacen los tests para probar todo esto sin salir a internet, sin
     mandar un mail y sin gastar un token.
+
+    Con `f7` (la AtencionF7 de src/agente/f7/produccion.py) el que contesta es
+    el agente de F7: la puerta, la ráfaga, los candados y los avisos son los
+    mismos; cambia quién piensa la respuesta y cómo sale. Lo arma
+    `crear_app_f7` (src/agente/f7/servidor.py).
     """
     config = config or Config.desde_entorno()
     validar_token(config.chatwoot_webhook_token)
@@ -231,7 +237,11 @@ def crear_app(
     # El agente se arma una sola vez y atiende a todo el mundo. Es lo que
     # queremos: adentro tiene la conexión a Postgres, y armarlo por mensaje
     # sería abrir una conexión nueva cada vez.
-    agente = agente or Agente(config)
+    #
+    # Con `f7` contesta el agente de F7, que trae su propia memoria: el del
+    # kit ni se arma.
+    if f7 is None:
+        agente = agente or Agente(config)
     avisos = avisos or Avisos.desde_config(config)
     tope = tope or TopeDeMensajes(config.tope_mensajes_por_dia)
     lector = lector or armar_lector(config, canal)
@@ -306,8 +316,30 @@ def crear_app(
         registro.info("[%s] no contesto: mientras esperaba, %s", conversacion, motivo)
         return True
 
+    async def responder_f7(conversacion: str, texto: str, corte: int) -> None:
+        """El turno de F7: carga la conversación, piensa, guarda y manda por Chatwoot.
+
+        Todo eso bloquea (la base, el modelo, Chatwoot), así que va a un hilo
+        aparte. Si el turno falla, no salió nada; si lo que falla es mandar,
+        puede haber salido una parte. En los dos casos el cliente no ve el
+        error y la conversación pasa a una persona.
+        """
+        try:
+            await asyncio.to_thread(f7.atender, conversacion, texto, corte)
+        except Exception as e:
+            de_chatwoot = isinstance(e, ErrorDeChatwoot) or getattr(e, "de_chatwoot", False)
+            await algo_se_rompio(
+                conversacion,
+                e,
+                CAUSA_CHATWOOT if de_chatwoot else CAUSA_MODELO,
+                "envio" if de_chatwoot else "modelo",
+            )
+
     async def responder(conversacion: str, texto: str) -> None:
         """Le pasa la ráfaga al agente y manda la respuesta por Chatwoot."""
+        # (F7) Se anota antes de esperar el turno: si mientras espera llega un
+        # «borrar», este lote es de antes y ya no se contesta.
+        corte_f7 = f7.corte_actual(conversacion) if f7 is not None else 0
         async with candados[conversacion]:
             if len(texto) > config.largo_maximo_de_entrada:
                 registro.warning(
@@ -319,6 +351,10 @@ def crear_app(
                 texto = texto[: config.largo_maximo_de_entrada]
 
             registro.info("[%s] %s", conversacion, _CONTROL.sub(" ", texto)[:200])
+
+            if f7 is not None:
+                await responder_f7(conversacion, texto, corte_f7)
+                return
 
             try:
                 # El "escribiendo..." y el agente son código bloqueante (urllib
@@ -528,6 +564,8 @@ def crear_app(
             "sí" if getattr(lector, "transcribir", None) else "no (falta OPENAI_API_KEY: pasan a una persona)",
             "calla al agente" if config.respetar_resueltas else "no cambia nada",
         )
+        if f7 is not None:
+            registro.info("Contesta el agente de F7 - %s", f7.salud())
         cuidar_el_permiso = (
             asyncio.create_task(mantener_el_permiso(avisos))
             if avisos.activos and avisos.metodo == "google"
@@ -570,12 +608,15 @@ def crear_app(
         Coolify le pega a esto cada tanto. Si no contesta, reinicia el
         contenedor.
         """
-        return {
+        datos = {
             "estado": "ok",
             "proveedor": config.proveedor,
             "modelo": config.modelo,
             "memoria": "postgres" if config.modo == "produccion" else "sqlite",
         }
+        if f7 is not None:
+            datos.update(f7.salud())
+        return datos
 
     @app.post("/reset/{token}")
     async def reset(token: str, pedido: Request) -> JSONResponse:
@@ -607,7 +648,7 @@ def crear_app(
             )
 
         try:
-            await asyncio.to_thread(agente.olvidar, conversacion)
+            await asyncio.to_thread((f7 or agente).olvidar, conversacion)
         except Exception as e:
             registro.error("[%s] no se pudo borrar la memoria: %s", conversacion, e)
             return JSONResponse({"error": f"{type(e).__name__}: {e}"}, status_code=500)
@@ -657,6 +698,16 @@ def crear_app(
             # No es un error: es la mayoría de lo que llega. Cada respuesta
             # que manda el propio agente vuelve como un evento más.
             return JSONResponse({"estado": "ignorado"})
+
+        es_borrar = getattr(canal, "es_borrar", None) if f7 is not None else None
+        if es_borrar is not None and es_borrar(entrante):
+            # «borrar» (de F7) no espera a la ráfaga: lo que esa conversación
+            # tuviera juntado o a medio contestar ya no sale, y la confirmación
+            # va ya.
+            f7.pedir_corte(entrante.conversacion)
+            buffer.descartar(entrante.conversacion)
+            en_segundo_plano(responder(entrante.conversacion, entrante.texto))
+            return JSONResponse({"estado": "borrar"})
 
         decision = tope.anotar(entrante.conversacion)
         if decision == BLOQUEAR:

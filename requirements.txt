@@ -21,6 +21,12 @@ fastapi>=0.115,<1
 uvicorn>=0.30,<1
 python-dotenv>=1.0,<2
 
+# --- F7: buscar_precio -----------------------------------------------------
+# Baja la planilla oficial de precios como XLSX y la lee. httpx ya viene con
+# el SDK de Anthropic; va acá para no depender de eso.
+httpx>=0.27,<1
+openpyxl>=3.1,<4
+
 # --- Solo para MODO=produccion ---------------------------------------------
 # Descomentá estas dos líneas cuando pases a Postgres.
 #
